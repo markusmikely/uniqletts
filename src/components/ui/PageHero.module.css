@@ -1,0 +1,117 @@
+/* ── Base hero — clean white (default, no image) ──────────── */
+.hero {
+  position: relative;
+  padding-block: clamp(2.5rem, 6vw, 4.5rem);
+  border-bottom: 1px solid var(--color-gray-200);
+  overflow: hidden;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 720px;
+}
+
+/* Default (no image) text colours */
+.eyebrow {
+  /* uses global .eyebrow class — primary blue, uppercase */
+}
+
+.title {
+  letter-spacing: -0.025em;
+}
+
+.subtitle {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--color-gray-600);
+  line-height: 1.7;
+  max-width: 58ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* ── Image variant ─────────────────────────────────────────── */
+.heroImage {
+  /* Remove the white border — image runs edge to edge */
+  border-bottom: none;
+  /* Slightly more breathing room so image shows */
+  padding-block: clamp(3rem, 7vw, 5.5rem);
+}
+
+/* Background image — absolutely fills the hero */
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  /* object-position comes from the inline style prop */
+}
+
+/* Dark overlay — opacity set via inline style prop */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: #1a2530; /* charcoal — same hue as --color-charcoal */
+}
+
+/* Light text variants — applied when image prop is present */
+.eyebrowLight {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  /* Slightly desaturated white so it doesn't compete with the title */
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.titleLight {
+  color: var(--color-white);
+  /* Slightly tighter at display size on image backgrounds */
+  letter-spacing: -0.03em;
+  /* Max-width so long titles don't stretch to full container */
+  max-width: 18ch;
+}
+
+.subtitleLight {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  line-height: 1.7;
+  max-width: 52ch;
+}
+
+/* ── Ensure buttons stay readable on image backgrounds ──────
+   The btn-primary (outline) needs adjusted colours on dark bg  */
+.heroImage .actions :global(.btn-primary) {
+  color: var(--color-white);
+  border-color: rgba(255, 255, 255, 0.5);
+  background: transparent;
+}
+.heroImage .actions :global(.btn-primary:hover) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.8);
+}
+
+/* ── Bottom fade — image blends into page content below ─────── */
+/* .heroImage::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: linear-gradient(to bottom, transparent, var(--color-white));
+  z-index: 1;
+  pointer-events: none;
+} */

@@ -1,0 +1,305 @@
+.footer {
+  background: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+  padding-top: clamp(2.5rem, 5vw, 4rem);
+  padding: 30px 0 0 0;
+}
+
+/* ── Main grid ──────────────────────────────────────────────── */
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* ── Brand column ───────────────────────────────────────────── */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 0.875rem;
+}
+
+/* Text logo — swap this out once the SVG is ready */
+.logo {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  display: inline-block;
+}
+.logo:hover { text-decoration: none; }
+
+/* If you use an <img> logo, this constrains its size */
+.logoImg {
+  height: 36px;
+  width: auto;
+  display: block;
+}
+
+.blockContainer {
+  display: block;
+}
+.tagline {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.65;
+}
+
+.address {
+  font-style: normal;
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  line-height: 1.65;
+}
+
+.contactLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.contact {
+  display: inline-block;
+  font-size: 0.875rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.contact:hover {
+  color: var(--color-mid);
+  text-decoration: underline;
+}
+
+/* ── Social icons ───────────────────────────────────────────── */
+.social {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray-200);
+  color: var(--color-gray-400);
+  text-decoration: none;
+  transition:
+    color 200ms ease,
+    border-color 200ms ease,
+    background 200ms ease,
+    transform 200ms ease;
+  flex-shrink: 0;
+}
+
+.socialLink:hover {
+  color: var(--social-color, var(--color-primary));
+  border-color: var(--social-color, var(--color-primary));
+  background: color-mix(in srgb, var(--social-color, var(--color-primary)) 8%, transparent);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
+
+/* Fallback for browsers without color-mix */
+@supports not (color: color-mix(in srgb, red, blue)) {
+  .socialLink:hover {
+    background: var(--color-xlight);
+  }
+}
+
+.socialLink:active {
+  transform: translateY(0);
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+}
+
+.socialIcon svg {
+  width: 16px;
+  height: 16px;
+  display: block;
+}
+
+/* ── Nav columns ────────────────────────────────────────────── */
+.col {}
+
+.colHeading {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-charcoal);
+  margin-bottom: 0.875rem;
+}
+
+.footerLink {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  padding: 0.25rem 0;
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.footerLink:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+/* ── Accreditations row ─────────────────────────────────────── */
+.accreditations {
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding-block: 1.5rem;
+  border-top: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.accreditationsInner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.accreditationsLabel {
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-gray-400);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.accreditationsList {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.accreditationBadge {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+/* Swap this div out for <img> once you have the real logos */
+.accreditationPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 40px;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  background: var(--color-gray-100);
+  flex-shrink: 0;
+}
+
+/* Once using real <img> logos: */
+.accreditationImg {
+  height: 40px;
+  width: auto;
+  display: block;
+  opacity: 0.7;
+  filter: grayscale(30%);
+  transition: opacity var(--transition), filter var(--transition);
+}
+.accreditationImg:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+
+.accreditationAbbr {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: var(--color-gray-600);
+}
+
+.accreditationName {
+  font-size: 0.8125rem;
+  color: var(--color-gray-600);
+  line-height: 1.3;
+}
+
+/* ── Bottom bar ─────────────────────────────────────────────── */
+.bottom {
+  padding-block: 1.5rem;
+}
+
+.bottomInner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.copy {
+  font-size: 0.8125rem;
+  color: var(--color-gray-400);
+  margin-bottom: 10px;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.bottomLink {
+  font-size: 0.8125rem;
+  color: var(--color-gray-400);
+  text-decoration: none;
+  transition: color var(--transition);
+}
+.bottomLink:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.bottomDot {
+  font-size: 0.8125rem;
+  color: var(--color-gray-200);
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+@media (min-width: 640px) {
+  .inner {
+    grid-template-columns: 1fr 1fr;
+  }
+  .brand {
+    grid-column: 1 / -1;
+  }
+  .bottomInner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 900px) {
+  .inner {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+  .brand {
+    grid-column: auto;
+  }
+  .accreditationsInner {
+    flex-wrap: nowrap;
+  }
+}
+

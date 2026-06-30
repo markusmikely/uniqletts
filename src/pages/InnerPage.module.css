@@ -1,0 +1,282 @@
+.section {
+  background: var(--color-white);
+}
+
+.sectionTint {
+  background: var(--color-xlight);
+  border-top: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-light);
+  padding-block: var(--section-py);
+}
+
+.sectionTitle {
+  margin-bottom: 2rem;
+  max-width: 32ch;
+}
+
+.bodyText {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.75;
+  max-width: 58ch;
+  margin-bottom: 1rem;
+}
+
+/* Service cards */
+.serviceGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.serviceCard {
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.serviceCardFeatured {
+  border-color: var(--color-mid);
+}
+
+.serviceCardTitle {
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  color: var(--color-charcoal);
+}
+
+.serviceCardFee {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+.serviceList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+}
+
+.serviceListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+  line-height: 1.5;
+}
+
+/* Steps */
+.steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.step {
+  display: flex;
+  gap: 1.25rem;
+  position: relative;
+}
+
+.stepNum {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  color: var(--color-primary);
+  flex-shrink: 0;
+  width: 2.5rem;
+  padding-top: 0.125rem;
+  position:relative;
+  margin-left:10px;
+  width: 50px;
+  height: 50px;
+  background: #68a8cd;
+  z-index: 0;
+  border-radius: 50%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  z-index: 11;
+}
+
+.stepLine {
+  position: absolute;
+  left: 30px;
+  top: 2rem;
+  bottom: -1.5rem;
+  width: 10px;
+  z-index: 0;
+  background: #ffffff;
+  z-index: 7;
+}
+
+.stepContent {
+  padding-bottom: 2rem;
+}
+
+.stepTitle {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.375rem;
+}
+
+.stepBody {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.7;
+}
+
+/* Why grid */
+.whyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+/* Compliance box */
+.complianceBox {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.complianceTitle {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  margin-bottom: 1rem;
+}
+
+.complianceList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.complianceItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+}
+
+/* CTA band */
+.ctaBand {
+  background: var(--color-xlight);
+  border-top: 1px solid var(--color-light);
+  padding-block: var(--section-py);
+}
+
+.ctaBandInner {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Form styles */
+.formGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.field { display: flex; flex-direction: column; gap: 0.375rem; }
+
+.label {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-charcoal);
+}
+
+.input {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  padding: 0.625rem 0.75rem;
+  width: 100%;
+  background: var(--color-white);
+  transition: border-color var(--transition);
+}
+.input::placeholder { color: var(--color-gray-400); }
+.input:focus { outline: none; border-color: var(--color-primary); }
+.textarea { resize: vertical; min-height: 120px; }
+
+.submitBtn { align-self: flex-start; }
+
+.successBox {
+  background: var(--color-xlight);
+  border: 1px solid var(--color-light);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+}
+.successBox h3 { font-family: var(--font-display); color: var(--color-charcoal); }
+.successBox p { font-size: 0.9375rem; color: var(--color-gray-600); }
+
+/* Info panel (used on valuations sidebar etc) */
+.infoPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.infoPanelCard {
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+}
+
+.infoPanelTitle {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--color-charcoal);
+  margin-bottom: 0.75rem;
+}
+
+.infoPanelList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.infoPanelItem {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  font-size: 0.9rem;
+  color: var(--color-gray-600);
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (min-width: 640px) {
+  .serviceGrid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 900px) {
+  .serviceGrid { grid-template-columns: repeat(3, 1fr); }
+  .whyGrid { grid-template-columns: 1fr 1fr; gap: 4rem; }
+  .ctaBandInner { flex-direction: row; justify-content: space-between; align-items: center; }
+  .formGrid { grid-template-columns: 3fr 2fr; }
+}

@@ -1,0 +1,343 @@
+/* ============================================================
+   HERO — full-viewport background image layout
+   ============================================================ */
+
+.hero {
+  position: relative;
+  min-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* Background image — fills the entire hero */
+.bgImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  z-index: 0;
+}
+
+/* Dark gradient overlay — stronger at top, fades toward bottom
+   so trust bar text stays legible without being too heavy overall */
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(20, 28, 38, 0.62) 0%,
+      rgba(20, 28, 38, 0.52) 60%,
+      rgba(20, 28, 38, 0.72) 100%
+    );
+}
+
+/* Main content — sits above overlay, centred vertically */
+.content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: clamp(3rem, 8vh, 5rem);
+  gap: 2rem;
+}
+
+/* ---- Copy ------------------------------------------------- */
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.heading {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4.25rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.headingAccent {
+  color: #7ec8e3; /* lighter tint of --color-mid, legible on dark bg */
+}
+
+.sub {
+  font-size: clamp(0.9375rem, 2vw, 1.0625rem);
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.65;
+  max-width: 48ch;
+}
+
+/* ---- Search form ----------------------------------------- */
+.searchForm {
+  width: 100%;
+  max-width: 680px;
+  background: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* To rent / To buy tabs */
+.typeToggle {
+  display: flex;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.typeBtn {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--color-gray-600);
+  background: var(--color-white);
+  border: none;
+  cursor: pointer;
+  transition: color var(--transition), background var(--transition);
+}
+.typeBtn:first-child {
+  border-right: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg) 0 0 0;
+}
+.typeBtn:last-child {
+  border-radius: 0 var(--radius-lg) 0 0;
+}
+.typeBtn:hover {
+  color: var(--color-primary);
+  background: var(--color-xlight);
+}
+
+.typeBtnActive {
+  color: var(--color-primary) !important;
+  background: var(--color-xlight) !important;
+  position: relative;
+}
+.typeBtnActive::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--color-primary);
+}
+
+/* Fields row */
+.searchFields {
+  display: flex;
+  align-items: stretch;
+  padding: 0.875rem;
+  gap: 0.625rem;
+  flex-wrap: wrap;
+}
+
+.searchField {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+  min-width: 120px;
+}
+
+.searchLabel {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-gray-600);
+  padding-inline: 0.125rem;
+}
+
+.searchSelect {
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  color: var(--color-charcoal);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.625rem;
+  background: var(--color-white);
+  cursor: pointer;
+  transition: border-color var(--transition);
+  width: 100%;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8' fill='none'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7685' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.625rem center;
+  padding-right: 2rem;
+}
+.searchSelect:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.searchBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border: none;
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  white-space: nowrap;
+  align-self: flex-end;
+  transition: background var(--transition);
+  min-height: 42px;
+}
+.searchBtn:hover {
+  background: #d4722e;
+}
+
+/* ---- CTAs ------------------------------------------------- */
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.ctaAccent {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: var(--color-accent);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background var(--transition);
+}
+.ctaAccent:hover {
+  background: #d4722e;
+  text-decoration: none;
+}
+
+.ctaGhost {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.75rem 1.5rem;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition);
+}
+.ctaGhost:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+/* ---- Trust bar — anchored to bottom of hero --------------- */
+.trustBar {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(15, 22, 30, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.trustInner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0;
+  padding-block: 1.125rem;
+}
+
+.trustItem {
+  display: flex;
+  align-items: baseline;
+  gap: 0.375rem;
+  padding-inline: 1.5rem;
+}
+
+.trustNum {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  color: var(--color-white);
+  line-height: 1;
+}
+
+.trustStars {
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+}
+
+.trustLabel {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.trustDivider {
+  width: 1px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.18);
+  flex-shrink: 0;
+}
+
+/* ---- Responsive ------------------------------------------ */
+@media (max-width: 639px) {
+  .searchFields {
+    flex-direction: column;
+  }
+  .searchField {
+    min-width: unset;
+    flex: unset;
+  }
+  .searchBtn {
+    width: 100%;
+    padding-block: 0.75rem;
+  }
+  .trustItem {
+    padding-inline: 0.875rem;
+  }
+  .trustDivider {
+    display: none;
+  }
+  .trustInner {
+    gap: 0.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .searchFields {
+    flex-wrap: nowrap;
+  }
+}
+
