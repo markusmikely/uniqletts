@@ -6,6 +6,7 @@ import logo from '../../assets/logo.webp'
 const NAV_LINKS = [
   { label: 'Properties', href: '/properties' },
   { label: 'Landlords',  href: '/landlords' },
+  { label: 'Block management', href: '/block-management' },
   { label: 'Tenants',    href: '/tenants' },
   { label: 'Area guide', href: '/area-guide' },
   { label: 'About',      href: '/about' },

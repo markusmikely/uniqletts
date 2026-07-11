@@ -1,0 +1,1837 @@
+[
+ {
+  "_createdAt": "2022-07-07T09:23:54Z",
+  "_id": "ea56ced2-86c6-4e31-a1a0-e3e241fb0af0",
+  "_type": "privacyPage",
+  "_updatedAt": "2022-07-07T09:25:29Z",
+  "content": [
+   {
+    "_key": "eb42ba4a0292",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "aa18a85e25950",
+      "_type": "span",
+      "marks": [],
+      "text": "This is the privacy notice of Uniqletts Limited (registration number: 07055697), whose registered office is at 167 Latymer Court, Hammersmith Road, London W6 7JQ."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9e51f08b2a58",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "03f89b1419f20",
+      "_type": "span",
+      "marks": [],
+      "text": "This privacy notice sets out how we collect and process your personal data. This privacy notice also provides certain information that is legally required and lists your rights in relation to your personal data."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "563a1419190b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "14902b1d63e50",
+      "_type": "span",
+      "marks": [],
+      "text": "This privacy notice relates to personal information that identifies you as a natural person (whether you are an actual or potential customer, an individual who browses our website or an individual outside our organisation with whom we interact). We refer to this information throughout this privacy notice and policy as personal data or personal information and further detail of what this includes are set out in this privacy notice below."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6d89b68208af",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "974f11c410d50",
+      "_type": "span",
+      "marks": [],
+      "text": "The privacy and security of your personal information is very important to us so we want to assure you that your information will be properly managed and protected by us at all times. Please read this privacy notice carefully as it explains how we may collect and use your personal data."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "eb96941b7621",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a45bcdc08ec60",
+      "_type": "span",
+      "marks": [],
+      "text": "CHANGES TO THE PRIVACY NOTICE AND YOUR DUTY TO INFORM US OF CHANGES"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "c4db5d2fd988",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d96d786d0d090",
+      "_type": "span",
+      "marks": [],
+      "text": "This privacy notice may vary from time to time so please check it regularly. This version was last updated on 25 May 2018."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c152c777768d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2addcaa0d3520",
+      "_type": "span",
+      "marks": [],
+      "text": "It is important that the personal data we hold about you is accurate and current. Please keep us informed if your personal data changes during your relationship with us. For example if you change your email address, name or payment details, please let us know the correct details by sending a letter to us at our registered address above. You may ask us, or we may ask you, to correct information you or we think is inaccurate, and you may also ask us to remove information which is inaccurate."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fafeb633a69a",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8db59ff4cdf00",
+      "_type": "span",
+      "marks": [],
+      "text": "LINKS TO OTHER WEBSITES"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "17ac22013f47",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "f6553a6b1c080",
+      "_type": "span",
+      "marks": [],
+      "text": "Our website may contain links to other websites of interest. However, once you have used these links to leave our site, you should note that we do not have any control over that other website. Therefore, we cannot be responsible for the protection and privacy of any information which you provide whilst visiting such sites and such sites are not governed by this privacy notice. You should exercise caution and look at the privacy statement applicable to the website in question."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6b77c47d340c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "145a3f1388320",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW TO CONTACT US"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "e830064c86d4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4ca50258d8840",
+      "_type": "span",
+      "marks": [],
+      "text": "For the purposes of relevant data protection legislation, we are a controller of your personal data. As a controller we use (or process) the personal data we hold about you in accordance with this privacy notice."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "01b2dc3b9d1e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "398be9f0d4f80",
+      "_type": "span",
+      "marks": [],
+      "text": "If you need to contact us in connection with the use or processing of your personal data, then you can do so using our contact details on our website or correspondence you may have received from us."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a8d2329635f2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "48dc5e6795010",
+      "_type": "span",
+      "marks": [],
+      "text": "WHAT INFORMATION WE HOLD ABOUT YOU?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "738d78a8448d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ebc36e8e9e630",
+      "_type": "span",
+      "marks": [],
+      "text": "The personal data that we collect about you may include the following information:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c876abfce4e1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d4f3e5de11ad0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity Data includes Full Name, username or similar identifier, age, nationality, marital status, title, date of birth, photographic identification and gender."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e9e4ad19b265",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a543c273392c0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact Data includes billing and correspondence addresses, email address and telephone numbers."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f1a7a180acf4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8bf4585e195a0",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial Data includes bank account and payment card details."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "7f60286f3622",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d2cfbb02eba50",
+      "_type": "span",
+      "marks": [],
+      "text": "Transaction Data includes details about payments to and from you."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fdb6f08a1505",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "e2ff7b85bbc30",
+      "_type": "span",
+      "marks": [],
+      "text": "Property Data includes details about property occupancy, building and car parking security data, energy usage, and relevant surveys."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b90b685cd498",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2057b68d24390",
+      "_type": "span",
+      "marks": [],
+      "text": "Information about your use of our website including personal data gathered using cookies."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "abc60d51097d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5043246cee440",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW IS YOUR PERSONAL DATA COLLECTED?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "707217440d84",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6a65d2f9a9070",
+      "_type": "span",
+      "marks": [],
+      "text": "We use different methods to collect data from and about you including:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "16b49bb18324",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5f53acb1a0b30",
+      "_type": "span",
+      "marks": [],
+      "text": "Direct interactions. You may give us your Identity, Contact, Financial and Property Data by filling in forms or by corresponding with us by post, phone, email or otherwise. This includes personal data you provide when you:"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "14da44e4320b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "124eb11019de0",
+      "_type": "span",
+      "marks": [],
+      "text": "apply for our products or services;"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b91449461315",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c06b719a3c320",
+      "_type": "span",
+      "marks": [],
+      "text": "complete a survey; or"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "26336bc963f1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4346bf0378250",
+      "_type": "span",
+      "marks": [],
+      "text": "give us some feedback."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "061e8dea614c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "47ea6d2b1e2f0",
+      "_type": "span",
+      "marks": [],
+      "text": "USE OF OUR WEBSITE INCLUDING PERSONAL DATA GATHERED USING COOKIES"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "7b42b1f2ae88",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b8b2c10737e00",
+      "_type": "span",
+      "marks": [],
+      "text": "Third parties or publicly available sources. We may receive personal data about you from various third parties as set out below:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "656cd9831b49",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "54ee2f7c01640",
+      "_type": "span",
+      "marks": [],
+      "text": "Personal data from the landlord"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "cbfe69c8d6a0",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "478240c111ad0",
+      "_type": "span",
+      "marks": [],
+      "text": "Personal data from the management company appointing us as a managing agent"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fa8bf6bb6e60",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0ec803bfa48c0",
+      "_type": "span",
+      "marks": [],
+      "text": "Personal data from solicitors or other legal professionals including when you purchase or rent within a property we manage"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "bfc967481b39",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b752050edc6a0",
+      "_type": "span",
+      "marks": [],
+      "text": "Personal data from other managing agents as part of a management handover to us."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a020e355f076",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6e929924e8cb0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity, Contact and Property Data from publicly availably sources such as Companies House, Land Registry and the Electoral Register based inside the EU."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "039396d171a1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "99c5685b2d510",
+      "_type": "span",
+      "marks": [],
+      "text": "We also collect information from publicly available sources and third party databases made available to the relevant industry for the purposes of reducing fraud and financial crime as well as any other third party databases where your personal data may be held, provided such third parties have lawful bases on which to share such personal data with us."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f03d84de6085",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "02f5028cb8b50",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW WE USE YOUR PERSONAL DATA?"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "330c3efbe1a6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d235dc99216d0",
+      "_type": "span",
+      "marks": [],
+      "text": "We will only use your personal data when the law allows us to. Most commonly, we will use your personal data in the following circumstances:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "dbaba8f66e84",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "50b69dc240ff0",
+      "_type": "span",
+      "marks": [],
+      "text": "Where we need to perform the contract we are about to enter into or have entered into with you, the named manager or the landlord that appointed us."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3556cdcf43de",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "f84c066747bb0",
+      "_type": "span",
+      "marks": [],
+      "text": "Where it is necessary for our legitimate interests (or those of a third party) and your interests and fundamental rights do not override those interests."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "7b000f0e3a82",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ab1cca0daf190",
+      "_type": "span",
+      "marks": [],
+      "text": "Where we need to comply with a legal or regulatory obligation."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "5670df896f1d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "681ad29f9aac0",
+      "_type": "span",
+      "marks": [],
+      "text": "Given the above generally we do not rely on consent as a legal basis for processing your personal data."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "6949a3d3a7f5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6960e10f0ef20",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW WE USE YOUR PERSONAL DATA AND THE LAWFUL BASIS FOR DOING SO"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "7947627aeb36",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1ad303b2fad70",
+      "_type": "span",
+      "marks": [],
+      "text": "We may rely on one or more of the following legal bases when processing your personal data for the following purposes:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "714c4f1ae4d2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "463fb9b907f30",
+      "_type": "span",
+      "marks": [],
+      "text": "Purpose/ Activity Type of data Lawful basis for processing including basis of legitimate interest"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8554c1acb4b8",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1428103b3cbc0",
+      "_type": "span",
+      "marks": [],
+      "text": "To register you as a new customer"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d82d49cd178c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "07a2278941df0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d3ba844f7803",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "bf0a26391f3b0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "71fc169a5c00",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b18d9ce16ee00",
+      "_type": "span",
+      "marks": [],
+      "text": "To provide services to you including customer services"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3f3e6d916754",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6dc281360cc50",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e0c2512de8b4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4ed7b40de1b30",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8de2a1743ea4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0965b17860350",
+      "_type": "span",
+      "marks": [],
+      "text": "To manage payments for services"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "2b636d895c06",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "584c651ad3f30",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f522f00ddcb5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "13e5477eac3c0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f0be45e5e8a0",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "12220c8d6f640",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a9730417bb31",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "06d235a41f350",
+      "_type": "span",
+      "marks": [],
+      "text": "To provide Insurance services"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "1e82625c2efd",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6ef4bd161b1b0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "880e0c7d6793",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b038fcbf039d0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a70c9208d3e3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "24c0d78b31050",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e00d80600da9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "3301cc9d9e100",
+      "_type": "span",
+      "marks": [],
+      "text": "To provide lettings services"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "c94de7603789",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "7bee4d93d09f0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "bca76e237b13",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "733aa3b5fe560",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "11b9261f6b2e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "617befc33e0f0",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "411e2a321f9e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0dfd3b3ac1000",
+      "_type": "span",
+      "marks": [],
+      "text": "To provide property management services"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f57b98a9ec51",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b327a14bfb9a0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "edf3ec0044f8",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "66f7ce8ffd2b0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "2827894360c6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "debe76e664e50",
+      "_type": "span",
+      "marks": [],
+      "text": "To manage our relationship with you which will include:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e936bb73e74f",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "fb0b2aeed28b0",
+      "_type": "span",
+      "marks": [],
+      "text": "Notifying you about changes to our terms or privacy policy"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b56b80afbea9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "fe50a496c8220",
+      "_type": "span",
+      "marks": [],
+      "text": "Asking you to leave a review or take a survey"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "eb7739f8edd1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "19dceeb8f4cc0",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f6178c8caacf",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b754126e62bc0",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "0f65ea45d775",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "def7ad65db570",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "91cc85ec4673",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "937084fc5c970",
+      "_type": "span",
+      "marks": [],
+      "text": "Performance of a contract"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "77312b6e9e8b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "79a6266c9eed0",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary to comply with a legal obligation"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a791d3938772",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "37d6afaa37800",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary for our legitimate interests (to keep our records updated and gain feedback on our products/services)"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "69fcec766e9d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "98c2309236d70",
+      "_type": "span",
+      "marks": [],
+      "text": "To administer our website"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b745f01772e2",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c1ab32ea4b140",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9f742f268475",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2b3c3afd77950",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d065c7103efa",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0d9db8c5208c0",
+      "_type": "span",
+      "marks": [],
+      "text": "Information provided by cookies"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "11630dfd1f5b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "42a83169c56e0",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary for our legitimate interests (to respond to customer enquiries)"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "271f4fe3149e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4fceed65e8350",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary to comply with a legal obligation"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "e0f986170671",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a268f75bf99b0",
+      "_type": "span",
+      "marks": [],
+      "text": "To administer and maintain our property management systems, software and services"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "91db630071e1",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0942249737760",
+      "_type": "span",
+      "marks": [],
+      "text": "Identity"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8ac4f941a04e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5e0b1b8c1f220",
+      "_type": "span",
+      "marks": [],
+      "text": "Contact"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "4765414725ce",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "e0924f232b580",
+      "_type": "span",
+      "marks": [],
+      "text": "Financial"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "42edf55ca393",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "7d79f887feae0",
+      "_type": "span",
+      "marks": [],
+      "text": "Transaction"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "7be161ee93cd",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "27b3e00a1a830",
+      "_type": "span",
+      "marks": [],
+      "text": "Property"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "96b6b90dc2a9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8e85e1f366e50",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary for our legitimate interests (to maintain customer records)"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d27586e7b0a9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1675ac47ccf30",
+      "_type": "span",
+      "marks": [],
+      "text": "Necessary to comply with a legal obligation"
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "46b525fcb697",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "17a90eceb06b0",
+      "_type": "span",
+      "marks": [],
+      "text": "In the interests of security and to improve our service, telephone calls you make to us may be monitored and/ or recorded."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8bb1e52f49b0",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1f4b0fdbc7b40",
+      "_type": "span",
+      "marks": [],
+      "text": "The processing is necessary to pursue our legitimate interest in the management and operation of our business."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "15fde98dfc3b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b2f3ba6858c40",
+      "_type": "span",
+      "marks": [],
+      "text": "COOKIES"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "78bea0af4d28",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "7df189d3aec00",
+      "_type": "span",
+      "marks": [],
+      "text": "A cookie is a small file which asks permission to be placed on your computer's hard drive."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "4c72f57453c3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ca4a6c3e6da80",
+      "_type": "span",
+      "marks": [],
+      "text": "Once you agree, the file is added and the cookie helps analyse web traffic or lets you know when you visit a particular site."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a0c3382299a4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "233ab9cb3d300",
+      "_type": "span",
+      "marks": [],
+      "text": "Cookies allow web applications to respond to you as an individual."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8b6c2b64d47d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c309e980ac190",
+      "_type": "span",
+      "marks": [],
+      "text": "The web application can tailor its operations to your needs, likes and dislikes by gathering and remembering information about your preferences."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f6e41794504b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d6bead8a36430",
+      "_type": "span",
+      "marks": [],
+      "text": "This may help us analyse data about web page traffic and improve our website in order to tailor it to customer needs."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "f7594eef5618",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2728d82ba9f20",
+      "_type": "span",
+      "marks": [],
+      "text": "We only use this information for statistical analysis purposes and then the data is removed from the system."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "63d377d592f3",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4482c47420430",
+      "_type": "span",
+      "marks": [],
+      "text": "Overall, cookies help us provide you with a better website, by enabling us to monitor which pages you find useful and which you do not."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3b0a9a30ab64",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "3e1dde0a8fd40",
+      "_type": "span",
+      "marks": [],
+      "text": "A cookie in no way gives us access to your computer or any information about you, other than the data you choose to share with us. You can choose to accept or decline cookies. Most web browsers automatically accept cookies, but you can usually modify your browser setting to decline cookies if you prefer. This may prevent you from taking full advantage of the website."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "43f4c12eeaf9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5a1caa0603590",
+      "_type": "span",
+      "marks": [],
+      "text": "WHO WE PASS YOUR PERSONAL DATA TO"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "b945b2900791",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4e55187459640",
+      "_type": "span",
+      "marks": [],
+      "text": "We may have to share your personal data with the parties set out below for the purposes set out in the table above."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "2d17a1a9ff05",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "12e365f366ac0",
+      "_type": "span",
+      "marks": [],
+      "text": "Service providers acting as processors who provide IT and system administration services including Trace Property Solutions."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3eef615885e4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6cabcdfb6da20",
+      "_type": "span",
+      "marks": [],
+      "text": "Property related services such as contractors tradespersons or service providers acting as processors in providing maintenance and management services."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "1787a04379b8",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "f5488f81e75d0",
+      "_type": "span",
+      "marks": [],
+      "text": "Professional advisers acting as processors or joint controllers including lawyers, auditors, debt collection agencies and insurers who provide consultancy, banking, legal, insurance and accounting services."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "8d52ca34ff03",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "f863f23fe7930",
+      "_type": "span",
+      "marks": [],
+      "text": "HM Revenue & Customs, regulators and other authorities acting as processors or joint controllers based in the United Kingdom who require reporting of processing activities in certain circumstances."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "85a5966769ff",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "241207dc99280",
+      "_type": "span",
+      "marks": [],
+      "text": "We require all third parties to respect the security of your personal data and to treat it in accordance with the law. We do not allow our third‐party service providers to use your personal data for their own purposes and only permit them to process your personal data for specified purposes and in accordance with our instructions."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9ca8472eb55b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "1abf90f17b2a0",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW IS YOUR DATA SECURED"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "27e475f4ad51",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "710639e7e8b00",
+      "_type": "span",
+      "marks": [],
+      "text": "We have put in place appropriate security measures to prevent your personal data from being accidentally lost, used or accessed in an unauthorised way, altered or disclosed. In addition, we limit access to your personal data to those employees, agents, contractors and other third parties who will only process your personal data on our instructions and they are subject to a duty of confidentiality."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "a087fd0063c9",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "69389eaf9e350",
+      "_type": "span",
+      "marks": [],
+      "text": "We have put in place procedures to deal with any suspected personal data breach and will notify you and any applicable regulator of a breach where we are legally required to do so."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "ad37dd31af6b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "267f7e5eb6190",
+      "_type": "span",
+      "marks": [],
+      "text": "HOW LONG WILL WE USE YOUR PERSONAL DATA FOR"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "46b4a52df381",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "6bfb44315ecf0",
+      "_type": "span",
+      "marks": [],
+      "text": "We will only store your data for as long as is necessary to fulfill the purposes we collected it for, including for the purposes of satisfying any legal, accounting, or reporting requirements."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b5aa1652fd13",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a5e1d3052a5d0",
+      "_type": "span",
+      "marks": [],
+      "text": "YOUR RIGHTS"
+     }
+    ],
+    "markDefs": [],
+    "style": "h2"
+   },
+   {
+    "_key": "187b46d00351",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2da17518920b0",
+      "_type": "span",
+      "marks": [],
+      "text": "You have a number of rights concerning the personal information we use, which you may ask us to observe. In some cases even when you make a request concerning your personal information, we may not be required, or be able to carry out your request as this may result in us not being able to fulfil our legal and regulatory obligations under the lawful processing conditions under which we hold your data or because there is a minimum statutory period of time for which we have to keep you information."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "61f8377f58cb",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "e88dd0acf6770",
+      "_type": "span",
+      "marks": [],
+      "text": "You can ask us to:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "52d32d4e8cf5",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8b754793aaba0",
+      "_type": "span",
+      "marks": [],
+      "text": "Provide a copy of your personal information."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "9c71a6873b0b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d9e86f614d230",
+      "_type": "span",
+      "marks": [],
+      "text": "Correct or delete unnecessary or inaccurate personal information."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b1555054ac07",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4dd50f0a5a0d0",
+      "_type": "span",
+      "marks": [],
+      "text": "Restrict or to object to the use of your personal information at any time."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b864a1fa8728",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "78433219853e0",
+      "_type": "span",
+      "marks": [],
+      "text": "Provide your personal data in a structured, commonly used and machine‐readable format and to have your personal data transferred to another controller. This right only applies where our processing of your personal data is automated and the processing took place initially with your consent or for the performance of a contract with you."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3bb726ab8d6b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d7514776a7140",
+      "_type": "span",
+      "marks": [],
+      "text": "If and where we rely on your consent to use your personal information, you can withdraw that consent at any time. Where your consent is withdrawn, your previous consent will remain valid in respect of our use of your information prior to the date you withdrew it."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3639b98ba590",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ca05981755780",
+      "_type": "span",
+      "marks": [],
+      "text": "You will not have to pay a fee to access your personal data (or to exercise any of the other rights)."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "572401f5f916",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "0090dccb64fd0",
+      "_type": "span",
+      "marks": [],
+      "text": "However, we may charge a reasonable fee if your request is clearly unfounded, repetitive or excessive."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "175de4ea6f78",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5265cd543dff0",
+      "_type": "span",
+      "marks": [],
+      "text": "Alternatively, we may refuse to comply with your request in these circumstances. If you have any questions or concerns about this privacy notice or your data protection rights please contact us using our details set out at the beginning of this privacy notice."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "title": "Privacy Policy"
+ }
+]

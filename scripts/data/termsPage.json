@@ -1,0 +1,285 @@
+[
+ {
+  "_createdAt": "2022-07-07T09:24:21Z",
+  "_id": "495ed8c5-ba3c-4aa9-99bd-b194059d0a00",
+  "_type": "termsPage",
+  "_updatedAt": "2022-07-07T10:01:47Z",
+  "content": [
+   {
+    "_key": "d72736824e7b",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8cae07435dd50",
+      "_type": "span",
+      "marks": [],
+      "text": "Welcome to our website. If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern uniqletts.com relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "1b30d8577fd6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "401ebe63a28f0",
+      "_type": "span",
+      "marks": [],
+      "text": "The terms ‘uniqletts.com’ or ‘us’ or ‘we’ refers to the owner of the website whose registered office is Suite 14, 23 Redan Place, Bayswater, W2 4SA.. The term ‘you’ refers to the user or viewer of our website."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "3ed296c521f6",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "2fd7651bd3920",
+      "_type": "span",
+      "marks": [],
+      "text": "The use of this website is subject to the following terms of use:"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "219c0d033483",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "408bfec3bf3f0",
+      "_type": "span",
+      "marks": [],
+      "text": "The content of the pages of this website is for your general information and use only. It is subject to change without notice."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fa71e560a3fb",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "460c732184250",
+      "_type": "span",
+      "marks": [],
+      "text": "This website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information may be stored by us for use by third parties. Read our "
+     },
+     {
+      "_key": "460c732184251",
+      "_type": "span",
+      "marks": [
+       "971b44c0d31e"
+      ],
+      "text": "cookie policy"
+     },
+     {
+      "_key": "460c732184252",
+      "_type": "span",
+      "marks": [],
+      "text": " for further information."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [
+     {
+      "_key": "971b44c0d31e",
+      "_type": "link",
+      "href": "#!/cookie-policy/"
+     }
+    ],
+    "style": "normal"
+   },
+   {
+    "_key": "cfe712c53716",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "76384ef160ac0",
+      "_type": "span",
+      "marks": [],
+      "text": "Neither we nor any third parties provide any warranty or guarantee as to the accuracy, timeliness, performance, completeness or suitability of the information and materials found or offered on this website for any particular purpose. You acknowledge that such information and materials may contain inaccuracies or errors and we expressly exclude liability for any such inaccuracies or errors to the fullest extent permitted by law."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d46dae860d6d",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "9d32a8880c130",
+      "_type": "span",
+      "marks": [],
+      "text": "Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "179e76383704",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "5b657a018acd0",
+      "_type": "span",
+      "marks": [],
+      "text": "This website contains material which is owned by or licensed to us. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "06ba5383e9c4",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "43d9f1c34aaa0",
+      "_type": "span",
+      "marks": [],
+      "text": "All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "d52c39036509",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "bda9b07f08100",
+      "_type": "span",
+      "marks": [],
+      "text": "Unauthorised use of this website may give rise to a claim for damages and/or be a criminal offence."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "fea244253d5e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "a6d7f232fca90",
+      "_type": "span",
+      "marks": [],
+      "text": "From time to time, this website may also include links to other websites. These links are provided for your convenience to provide further information. They do not signify that we endorse the website(s). We have no responsibility for the content of the linked website(s)."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "33d9e3d34052",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "cac395a135c90",
+      "_type": "span",
+      "marks": [],
+      "text": "We reserve the right, at our sole discretion, to modify or replace these terms at any time. If a revision is material we will try to provide at least 30 (change this) days’ notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "4be58d5f6f4e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "4917688c78610",
+      "_type": "span",
+      "marks": [],
+      "text": "We may terminate or suspend access to our service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the terms. All provisions of the terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "7b79b8ce7688",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "f6962f0cbfe50",
+      "_type": "span",
+      "marks": [],
+      "text": "Your use of this website and any dispute arising out of such use of the website is subject to the laws of England, Northern Ireland, Scotland and Wales."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "165adfd4bd13",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "089a376e21640",
+      "_type": "span",
+      "marks": [],
+      "text": "If you have any questions about these Terms, please "
+     },
+     {
+      "_key": "089a376e21641",
+      "_type": "span",
+      "marks": [
+       "b43f58f76129"
+      ],
+      "text": "contact us"
+     },
+     {
+      "_key": "089a376e21642",
+      "_type": "span",
+      "marks": [],
+      "text": "."
+     }
+    ],
+    "level": 1,
+    "listItem": "bullet",
+    "markDefs": [
+     {
+      "_key": "b43f58f76129",
+      "_type": "link",
+      "href": "#!/contact/"
+     }
+    ],
+    "style": "normal"
+   }
+  ],
+  "title": "Terms & Conditions"
+ }
+]

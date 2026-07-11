@@ -5,13 +5,11 @@ import styles from './Hero.module.css'
 
 /*
   HERO IMAGE NOTE:
-  Replace the `src` on the <img> below with your chosen stock image.
-  Ideal spec: landscape, 2400px wide, people-focused (couple viewing
-  a flat, family outside a Bayswater terrace, professionals in Hyde Park).
-  The image sits behind a semi-transparent dark overlay so any well-lit
-  lifestyle shot will work.
+  Landscape, 2400px wide, people-focused. Sits behind a semi-transparent
+  dark overlay so any well-lit lifestyle shot works.
+  Current image: a couple at home in their kitchen (Unsplash).
 */
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=2400&q=85&auto=format&fit=crop&crop=center'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1602780765205-532dc7f6ded3?w=2400&q=85&auto=format&fit=crop'
 
 type ListingType = 'lettings' | 'sales'
 
@@ -36,7 +34,7 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <img
         src={HERO_IMAGE}
-        alt="Happy clients in West London"
+        alt="A couple at home in their London flat"
         className={styles.bgImage}
         width={2400}
         height={1600}
@@ -53,18 +51,18 @@ export default function Hero() {
         {/* Eyebrow + heading */}
         <div className={styles.copy}>
           <p className={`animate-fade-up ${styles.eyebrow}`}>
-            Bayswater &middot; Queensway &middot; Hyde Park
+            Central London &middot; Greater London &middot; A unique property experience
           </p>
 
           <h1 className={`animate-fade-up delay-1 ${styles.heading}`}>
             Your home in<br />
-            <span className={styles.headingAccent}>West London</span><br />
+            <span className={styles.headingAccent}>London</span><br />
             starts here
           </h1>
 
           <p className={`animate-fade-up delay-2 ${styles.sub}`}>
-            Independent letting and estate agents serving Bayswater
-            and the W2 area for over 15&nbsp;years.
+            Independent letting and estate agents with 20&nbsp;years of experience
+            across central and Greater London.
           </p>
         </div>
 
@@ -175,8 +173,8 @@ export default function Hero() {
           </div>
           <div className={styles.trustDivider} aria-hidden="true" />
           <div className={styles.trustItem}>
-            <span className={styles.trustNum}>15+</span>
-            <span className={styles.trustLabel}>Years in Bayswater</span>
+            <span className={styles.trustNum}>20+</span>
+            <span className={styles.trustLabel}>Years in London</span>
           </div>
           <div className={styles.trustDivider} aria-hidden="true" />
           <div className={styles.trustItem}>

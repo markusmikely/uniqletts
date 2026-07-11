@@ -12,6 +12,8 @@ export interface Property {
     area: string
     postcode: string
   }
+  geopoint?: { lat: number; lng: number }
+  excerpt?: string
   listingType: 'lettings' | 'sales'
   status: 'available' | 'let-agreed' | 'under-offer' | 'sold'
   propertyType?: 'studio' | 'flat' | 'house' | 'maisonette'

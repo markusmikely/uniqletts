@@ -15,6 +15,7 @@ const LINKS = {
     { label: 'Tenant services', href: '/tenants' },
     { label: 'Free valuation', href: '/valuations' },
     { label: 'Property management', href: '/landlords#management' },
+    { label: 'Block management', href: '/block-management' },
   ],
   Company: [
     { label: 'About us', href: '/about' },
@@ -96,7 +97,7 @@ export default function Footer() {
 
           <p className={styles.tagline}>
             Independent letting &amp; estate agents.<br />
-            Bayswater, London W2.
+            Central &amp; Greater London, since 2008.
           </p>
 
           <address className={styles.address}>

@@ -10,7 +10,7 @@ import styles from './InnerPage.module.css'
 
 export function TenantsPage() {
   useEffect(() => {
-    document.title = 'Tenant Services | Flats to Rent Bayswater W2 | Uniqletts'
+    document.title = 'Tenant Services | Flats to Rent in London | Uniqletts'
   }, [])
 
   const [submitted, setSubmitted] = useState(false)
@@ -43,9 +43,9 @@ export function TenantsPage() {
     <>
       <PageHero
         eyebrow="For tenants"
-        title="Find your perfect home in W2"
+        title="Find your perfect home in London"
         subtitle="We work hard to match you with the right property — and we're here to support you throughout your tenancy, not just on move-in day."
-        image="/images/heroes/tenants.jpg"
+        image="https://images.unsplash.com/photo-1637778131703-c25a9fe25c26?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 25%"
       >
         <Link to="/properties?type=lettings" className="btn btn-accent">Browse lettings</Link>
@@ -162,7 +162,7 @@ export function TenantsPage() {
    ============================================================ */
 export function ValuationsPage() {
   useEffect(() => {
-    document.title = 'Free Property Valuation Bayswater W2 | Uniqletts'
+    document.title = 'Free Property Valuation London | Uniqletts'
   }, [])
 
   const settings = useSiteSettings()
@@ -208,8 +208,8 @@ export function ValuationsPage() {
       <PageHero
         eyebrow="Free valuation"
         title="What is your property worth?"
-        subtitle="Get an accurate, honest valuation from agents who know the Bayswater and W2 market better than anyone. No obligation, no pressure."
-        image="/images/heroes/valuations.jpg"
+        subtitle="Get an accurate, honest valuation from agents with 20 years' experience across central and Greater London. No obligation, no pressure."
+        image="https://images.unsplash.com/photo-1740596261028-29a7ad308157?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 45%"
       />
 
@@ -279,7 +279,7 @@ export function ValuationsPage() {
               <div className={styles.infoPanelCard}>
                 <h3 className={styles.infoPanelTitle}>Why get a valuation?</h3>
                 <div className={styles.infoPanelList}>
-                  {['Accurate pricing from local experts', 'No obligation — just honest advice', 'Market comparison with recent W2 sales & lets', 'Advice on presenting your property', 'Guidance on fees and what to expect'].map(item => (
+                  {['Accurate pricing from London experts', 'No obligation — just honest advice', 'Market comparison with recent local sales & lets', 'Advice on presenting your property', 'Guidance on fees and what to expect'].map(item => (
                     <div key={item} className={styles.infoPanelItem}>
                       <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" style={{ color: 'var(--color-mid)', flexShrink: 0 }}><path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" /></svg>
                       {item}
@@ -288,7 +288,7 @@ export function ValuationsPage() {
                 </div>
               </div>
               <div className={styles.infoPanelCard}>
-                <h3 className={styles.infoPanelTitle}>W2 market snapshot</h3>
+                <h3 className={styles.infoPanelTitle}>London market snapshot</h3>
                 <div className={styles.infoPanelList}>
                   {marketStats.map(stat => (
                     <div key={stat.label} className={styles.infoPanelItem}><strong>{stat.label}:</strong> {stat.value}</div>
@@ -329,7 +329,7 @@ export function AreaGuidePage() {
         eyebrow="Area guide"
         title="Bayswater & W2 — living in West London"
         subtitle="Zone 1, next to Hyde Park, with world-class transport links and a genuinely diverse, cosmopolitan community. This is why people choose W2."
-        image="/images/heroes/area-guide.jpg"
+        image="https://images.unsplash.com/photo-1719941857483-f6789ad7200f?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 50%"
       />
 
@@ -380,8 +380,8 @@ export function AreaGuidePage() {
       <section className={styles.ctaBand}>
         <div className={`container ${styles.ctaBandInner}`}>
           <div>
-            <h2>View properties in W2</h2>
-            <p className={styles.bodyText} style={{ marginTop: '0.5rem' }}>Browse our current lettings and sales listings across Bayswater and Queensway.</p>
+            <h2>View our London properties</h2>
+            <p className={styles.bodyText} style={{ marginTop: '0.5rem' }}>Browse our current lettings and sales listings across central and Greater London.</p>
           </div>
           <Link to="/properties" className="btn btn-accent">Search properties</Link>
         </div>
@@ -395,7 +395,7 @@ export function AreaGuidePage() {
    ============================================================ */
 export function AboutPage() {
   useEffect(() => {
-    document.title = 'About Uniqletts | Independent Estate Agents Bayswater W2'
+    document.title = 'About Uniqletts | Independent Estate Agents London'
   }, [])
 
   return (
@@ -404,7 +404,7 @@ export function AboutPage() {
         eyebrow="About us"
         title="Independent, family-run, and genuinely local"
         subtitle="Uniqletts was founded on a simple belief: that buying, selling and renting property should be a personal experience — not a transaction processed by a call centre."
-        image="/images/heroes/about.jpg"
+        image="https://images.unsplash.com/photo-1573497701240-345a300b8d36?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 30%"
       />
 
@@ -413,15 +413,15 @@ export function AboutPage() {
           <div className={styles.whyGrid}>
             <div>
               <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>Our story</p>
-              <h2 className={styles.sectionTitle}>15 years in Bayswater</h2>
-              <p className={styles.bodyText}>Uniqletts was established over 15 years ago in the heart of Bayswater. From our offices at Redan Place, W2, we've helped hundreds of landlords, tenants, buyers and sellers navigate one of London's most sought-after property markets.</p>
-              <p className={styles.bodyText}>Our team is small by design. We believe the best service comes from people who know their clients — not from a revolving door of junior negotiators. Every client has a direct relationship with us, and we take real pride in the long-term connections we build.</p>
-              <p className={styles.bodyText}>The W2 area is genuinely our home, and our knowledge of it runs deep — from which buildings have the best natural light, to which streets are being regenerated, to what a realistic rental yield looks like in today's market.</p>
+              <h2 className={styles.sectionTitle}>20 years across London</h2>
+              <p className={styles.bodyText}>Uniqletts was established in 2008 in the heart of Bayswater. From our offices at Redan Place, W2, we've helped hundreds of landlords, tenants, buyers and sellers navigate the London property market — with homes let and managed everywhere from Kensington and Notting Hill to Hackney, Colindale and Kingston.</p>
+              <p className={styles.bodyText}>Our team is small by design. We believe a professional and friendly service comes first and foremost, and that the best service comes from people who know their clients — not from a revolving door of junior negotiators. Every client has a direct relationship with us, and many return time and time again.</p>
+              <p className={styles.bodyText}>London is genuinely our home, and our knowledge of it runs deep — from which buildings have the best natural light, to which neighbourhoods are being regenerated, to what a realistic rental yield looks like in today's market.</p>
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=75&auto=format&fit=crop"
-                alt="The Uniqletts team at their Bayswater office"
+                src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=700&q=75&auto=format&fit=crop"
+                alt="The Uniqletts team working together at the office"
                 style={{ width: '100%', borderRadius: 'var(--radius-xl)', aspectRatio: '4/3', objectFit: 'cover' }}
                 width={700} height={525} loading="lazy"
               />
@@ -438,7 +438,7 @@ export function AboutPage() {
             {[
               { title: 'Honesty', body: 'We give you the valuation your property deserves — not the one designed to win your instruction.' },
               { title: 'Responsiveness', body: 'We answer calls, reply to messages and deal with issues promptly. It\'s a basic expectation, and we always meet it.' },
-              { title: 'Local knowledge', body: 'Over 15 years in W2 means we know every street, every building type and every nuance of the local market.' },
+              { title: 'Local knowledge', body: '20 years across central and Greater London means we know every neighbourhood, every building type and every nuance of the market.' },
               { title: 'Long-term relationships', body: 'Many of our clients have been with us for years. That loyalty is something we\'ve earned, and continue to earn.' },
             ].map(v => (
               <div key={v.title} className="card" style={{ padding: '1.5rem' }}>
@@ -498,7 +498,7 @@ export function ContactPage() {
         eyebrow="Get in touch"
         title="We'd love to hear from you"
         subtitle="Whether you're looking to rent, let, buy or sell — we're here to help. Call us, email, or fill in the form below."
-        image="/images/heroes/contact.jpg"
+        image="https://images.unsplash.com/photo-1758611974917-f7f7a58b74b0?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 35%"
       />
 

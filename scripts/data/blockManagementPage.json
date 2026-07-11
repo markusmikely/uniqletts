@@ -1,0 +1,103 @@
+[
+ {
+  "_createdAt": "2022-07-05T12:52:49Z",
+  "_id": "3e41ddf1-2e7b-49d2-861b-3d59efafc49d",
+  "_type": "blockManagementPage",
+  "_updatedAt": "2022-07-07T01:17:00Z",
+  "blockManagementContent": [
+   {
+    "_key": "671d1db96f3c",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "278a65170e2d0",
+      "_type": "span",
+      "marks": [],
+      "text": "Our clients range from investor funds to private landlords and resident management companies, with properties across the spectrum, from 500-unit new-builds to converted blocks in prime estates."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "73e9e7e87eb8",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ef061166b4c00",
+      "_type": "span",
+      "marks": [],
+      "text": "We deal with the tendering and management of maintenance contracts, and the appointment and management of onsite staff to ensure the smooth running of the building. The team has a wealth of experience managing a variety of residential assets for a multitude of clients, so we are often called for expert witness and mediation."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "blockManagementSubtitle": "ADVICE AND ASSISTANCE FOR ACHIEVING PRACTICAL AND COST-EFFECTIVE MANAGEMENT",
+  "contactUsContent": [
+   {
+    "_key": "7bbb468c30ff",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "dee7a07233930",
+      "_type": "span",
+      "marks": [],
+      "text": "At Uniqletts our priority is to ensure that every single one of our clients feels happy and satisfied with the service they receive and considers our services to be fantastic value for money. We honestly believe a satisfied client is the best marketing tool for our company as they will recommend us and our services to friends and family indirectly contributing to our success."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "19e1aa2a2846",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "c719151150f40",
+      "_type": "span",
+      "marks": [],
+      "text": "Please do not hesitate to enquire further about Uniqletts services. We are confident that we can accommodate your requirements and that you will not be disappointed. Uniqletts - Unique Lettings, for you."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "contactUsTitle": "CONTACT US",
+  "content": [
+   {
+    "_key": "d59dca7e4e71",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "8697554575150",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "From day-to-day management to advising developers on the design of communal areas, we take care of anything and everything relating to apartment blocks and their communal areas."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "5297b55c8c96",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "06df2218c13d0",
+      "_type": "span",
+      "marks": [],
+      "text": "We work closely with developers to ensure that everything, from lifts to gardens, are designed so that they can be managed practically and cost effectively. We then offer advice and assistance to set service charge budgets, provide pre-completion consultancy to the house builders, and carry out consultations for major works and long-term agreements."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "title": "BLOCK MANAGEMENT"
+ }
+]

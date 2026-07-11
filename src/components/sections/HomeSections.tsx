@@ -19,7 +19,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Residential lettings',
-    body: 'From studio flats to family homes across Bayswater, Queensway and W2. We match the right tenant to the right property — quickly, professionally, and with your best interests at heart.',
+    body: 'From studio flats to family homes across central and Greater London. We match the right tenant to the right property — quickly, professionally, and with your best interests at heart.',
     href: '/properties?type=lettings',
     cta: 'Browse lettings',
   },
@@ -41,7 +41,7 @@ const SERVICES = [
       </svg>
     ),
     title: 'Sales & valuations',
-    body: 'Thinking of selling? Our knowledge of the W2 market means we price and market your property to attract the right buyers. Free, no-obligation valuations with honest, expert advice.',
+    body: 'Thinking of selling? Two decades in the London market mean we price and market your property to attract the right buyers. Free, no-obligation valuations with honest, expert advice.',
     href: '/valuations',
     cta: 'Get a valuation',
   },
@@ -125,33 +125,56 @@ export function FeaturedProperties() {
   )
 }
 
+const BLOCK_MANAGEMENT_FALLBACK = {
+  eyebrow: 'Block management',
+  title: 'Complete care for apartment blocks',
+  body: 'From day-to-day management to advising developers on the design of communal areas, we look after everything relating to apartment blocks and their communal spaces — for buildings across central and Greater London, from 500-unit new-builds to converted period blocks on prime estates.',
+  ctaLabel: 'Explore block management',
+  ctaHref: '/block-management',
+}
+
+const BLOCK_MANAGEMENT_POINTS = [
+  'Service charge budgeting & collection',
+  'Maintenance contracts, tendered & managed',
+  'Onsite staff appointment & supervision',
+  'Major works & Section 20 consultations',
+]
+
 export function BlockManagement() {
-  const [section, setSection] = useState<{
-    eyebrow?: string
-    title?: string
-    body?: string
-    ctaLabel?: string
-    ctaHref?: string
-  } | null>(null)
+  const [section, setSection] = useState(BLOCK_MANAGEMENT_FALLBACK)
 
   useEffect(() => {
     if (!sanityReady) return
     getHomepageSettings().then(data => {
-      if (data?.blockManagement) setSection(data.blockManagement)
+      if (data?.blockManagement?.title) {
+        setSection({ ...BLOCK_MANAGEMENT_FALLBACK, ...data.blockManagement })
+      }
     })
   }, [])
 
-  if (!section?.title) return null
-
   return (
-    <section className="section" style={{ background: 'var(--color-xlight)' }}>
-      <div className="container">
-        {section.eyebrow && <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>{section.eyebrow}</p>}
-        <h2>{section.title}</h2>
-        {section.body && <p style={{ marginTop: '1rem', maxWidth: 640, color: 'var(--color-gray-600)', lineHeight: 1.7 }}>{section.body}</p>}
-        {section.ctaHref && section.ctaLabel && (
-          <Link to={section.ctaHref} className="btn btn-primary" style={{ marginTop: '1.5rem' }}>{section.ctaLabel}</Link>
-        )}
+    <section className={`section ${styles.blockMgmt}`} aria-label="Block management">
+      <div className={`container ${styles.blockMgmtInner}`}>
+        <div className={styles.blockMgmtCopy}>
+          <p className="eyebrow">{section.eyebrow}</p>
+          <h2 className={styles.blockMgmtTitle}>{section.title}</h2>
+          <p className={styles.blockMgmtBody}>{section.body}</p>
+          {section.ctaHref && section.ctaLabel && (
+            <Link to={section.ctaHref} className="btn btn-primary" style={{ marginTop: '1rem' }}>
+              {section.ctaLabel} →
+            </Link>
+          )}
+        </div>
+        <ul className={styles.blockMgmtList}>
+          {BLOCK_MANAGEMENT_POINTS.map((point, i) => (
+            <li key={point} className={`card ${styles.blockMgmtItem} animate-fade-up delay-${i + 1}`}>
+              <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true" className={styles.blockMgmtCheck}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              <span>{point}</span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   )
@@ -172,12 +195,12 @@ export function AreaHighlight() {
     })
   }, [])
 
-  const eyebrow = copy?.eyebrow ?? 'The neighbourhood'
-  const title = copy?.title ?? 'The heart of West London'
+  const eyebrow = copy?.eyebrow ?? 'Where we work'
+  const title = copy?.title ?? 'Rooted in Bayswater, at home across London'
   const paragraphs = copy?.paragraphs ?? [
-    "Bayswater sits at one of London's most enviable intersections — Hyde Park to the south, Notting Hill to the west, Paddington's connectivity to the east.",
-    "Queensway is mid a £1 billion regeneration with the return of Whiteleys as a luxury mixed-use destination.",
-    "Whether you're a first-time renter, relocating professionally, or an investor looking for strong yields in a prime postcode — W2 consistently delivers.",
+    "Our office sits in Bayswater at one of London's most enviable intersections — Hyde Park to the south, Notting Hill to the west, Paddington's connectivity to the east.",
+    "But our portfolio reaches much further: from Kensington, Notting Hill and London Bridge to Hackney, Colindale, Kingston and beyond, we let and manage homes throughout central and Greater London.",
+    "Whether you're a first-time renter, relocating professionally, or an investor looking for strong yields — two decades of London letting means we know exactly where value lives.",
   ]
 
   return (
@@ -257,7 +280,7 @@ export function LandlordCta() {
           <p className="eyebrow">For landlords</p>
           <h2 className={styles.landlordCtaTitle}>Thinking of letting<br />your property?</h2>
           <p className={styles.landlordCtaSub}>
-            Get an honest, no-obligation valuation from local experts who know exactly what your property is worth in today's W2 market.
+            Get an honest, no-obligation valuation from experts who know exactly what your property is worth in today's London market.
           </p>
         </div>
         <div className={styles.landlordCtaActions}>

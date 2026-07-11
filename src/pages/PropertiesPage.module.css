@@ -148,9 +148,299 @@
   margin-top: 0.375rem;
 }
 
+/* ---- View toggle ------------------------------------------- */
+.viewToggle {
+  display: flex;
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-left: auto;
+}
+
+.viewBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  background: var(--color-white);
+  border-right: 1px solid var(--color-gray-200);
+  cursor: pointer;
+  transition: background var(--transition), color var(--transition);
+}
+.viewBtn:last-child { border-right: none; }
+.viewBtn:hover { background: var(--color-gray-100); color: var(--color-charcoal); }
+
+.viewBtnActive {
+  background: var(--color-primary) !important;
+  color: var(--color-white) !important;
+}
+
+/* ---- Advanced filters --------------------------------------- */
+.advancedToggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.875rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color var(--transition), color var(--transition);
+}
+.advancedToggle:hover { border-color: var(--color-mid); color: var(--color-charcoal); }
+
+.advancedToggleActive {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.advancedPanel {
+  border-top: 1px solid var(--color-gray-200);
+  background: var(--color-xlight);
+}
+
+.advancedInner {
+  display: flex;
+  align-items: center;
+  gap: 1rem 1.5rem;
+  padding-block: 0.875rem;
+  flex-wrap: wrap;
+}
+
+.checkLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--color-charcoal);
+  cursor: pointer;
+  white-space: nowrap;
+}
+.checkLabel input { accent-color: var(--color-primary); }
+
+.extras {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.extraChip {
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-gray-600);
+  background: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+.extraChip:hover { border-color: var(--color-mid); }
+
+.extraChipActive {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: var(--color-white);
+}
+
+.clearBtn {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ---- Detailed list view -------------------------------------- */
+.listStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.listCard {
+  display: grid;
+  grid-template-columns: 1fr;
+  text-decoration: none;
+  color: inherit;
+  background: var(--color-white);
+}
+.listCard:hover { text-decoration: none; }
+
+.listImageWrap {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.listBody {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.listTitle {
+  font-size: 1.0625rem;
+  font-weight: 700;
+  color: var(--color-charcoal);
+  line-height: 1.35;
+}
+
+.listExcerpt {
+  font-size: 0.875rem;
+  color: var(--color-gray-600);
+  line-height: 1.65;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 0.25rem;
+}
+
+.listFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: auto;
+  padding-top: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.listCta {
+  font-size: 0.8125rem;
+  padding: 0.5rem 1rem;
+}
+
+/* ---- Map view ------------------------------------------------ */
+.mapLayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.mapPane {
+  height: 45vh;
+  min-height: 320px;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--color-gray-200);
+  /* map on top on mobile */
+  order: -1;
+}
+
+.mapLoading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: var(--color-gray-400);
+  font-size: 0.875rem;
+  background: var(--color-gray-100);
+}
+
+.mapListPane {
+  display: flex;
+  gap: 0.875rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mapCard {
+  flex: 0 0 240px;
+  scroll-snap-align: start;
+  text-decoration: none;
+  color: inherit;
+  background: var(--color-white);
+}
+.mapCard:hover { text-decoration: none; }
+
+.mapCardSelected {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.mapCardImageWrap {
+  position: relative;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+}
+
+.mapCardBody {
+  padding: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mapCardPrice {
+  font-family: var(--font-display);
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: var(--color-primary);
+}
+
+.mapCardAddr {
+  font-size: 0.8125rem;
+  color: var(--color-charcoal);
+  line-height: 1.4;
+}
+
+/* ---- Responsive ---------------------------------------------- */
 @media (min-width: 640px) {
   .grid { grid-template-columns: 1fr 1fr; }
+
+  .listCard { grid-template-columns: 280px 1fr; }
+  .listImageWrap { aspect-ratio: auto; height: 100%; min-height: 210px; }
 }
+
 @media (min-width: 900px) {
   .grid { grid-template-columns: repeat(3, 1fr); }
+
+  .listCard { grid-template-columns: 340px 1fr; }
+
+  /* desktop map view: scrollable cards beside a tall sticky map */
+  .mapLayout {
+    grid-template-columns: minmax(300px, 2fr) 3fr;
+    align-items: start;
+  }
+  .mapPane {
+    order: 0;
+    position: sticky;
+    top: 132px;
+    height: calc(100vh - 164px);
+  }
+  .mapListPane {
+    flex-direction: column;
+    overflow-x: visible;
+    overflow-y: auto;
+    max-height: calc(100vh - 164px);
+    scroll-snap-type: none;
+    padding-right: 0.25rem;
+  }
+  .mapCard { flex: none; }
 }

@@ -1,11 +1,12 @@
-import { lazy, Suspense } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { lazy, Suspense, useEffect } from 'react'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import Layout from '@/components/layout/Layout'
 
 const HomePage        = lazy(() => import('@/pages/HomePage'))
 const PropertiesPage  = lazy(() => import('@/pages/PropertiesPage'))
 const PropertyDetail  = lazy(() => import('@/pages/PropertyDetail'))
 const LandlordsPage   = lazy(() => import('@/pages/LandlordsPage'))
+const BlockManagementPage = lazy(() => import('@/pages/BlockManagementPage'))
 const TenantsPage     = lazy(() => import('@/pages/TenantsPage'))
 const ValuationsPage  = lazy(() => import('@/pages/ValuationsPage'))
 const AreaGuidePage   = lazy(() => import('@/pages/AreaGuidePage'))
@@ -36,8 +37,21 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
   return <>{children}</>
 }
 
+/* Restore scroll position to the top whenever the route changes —
+   without this, SPA navigations keep the previous page's scroll offset.
+   Hash links (e.g. /landlords#management) are left to the browser. */
+function ScrollToTop() {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (!hash) window.scrollTo(0, 0)
+  }, [pathname, hash])
+  return null
+}
+
 export default function App() {
   return (
+    <>
+    <ScrollToTop />
     <Routes>
       {/* Admin — no public layout wrapper */}
       <Route path="/admin/*" element={
@@ -55,6 +69,7 @@ export default function App() {
               <Route path="/properties"          element={<PropertiesPage />} />
               <Route path="/properties/:slug"    element={<PropertyDetail />} />
               <Route path="/landlords"           element={<LandlordsPage />} />
+              <Route path="/block-management"    element={<BlockManagementPage />} />
               <Route path="/tenants"             element={<TenantsPage />} />
               <Route path="/valuations"          element={<ValuationsPage />} />
               <Route path="/area-guide"          element={<AreaGuidePage />} />
@@ -70,5 +85,6 @@ export default function App() {
         </Layout>
       } />
     </Routes>
+    </>
   )
 }

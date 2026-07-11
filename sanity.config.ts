@@ -5,6 +5,8 @@ import { visionTool } from '@sanity/vision'
 import { schemaTypes } from './src/studio/schemas'
 import { structure } from './src/studio/structure'
 import { ForwardEnquiryAction } from './src/studio/actions/forwardEnquiry'
+import { uniqlettsTheme } from './src/studio/theme'
+import { StudioLogo } from './src/studio/components/StudioLogo'
 
 const projectId = import.meta.env.VITE_SANITY_PROJECT_ID ?? 'placeholder'
 const dataset = import.meta.env.VITE_SANITY_DATASET ?? 'production'
@@ -15,6 +17,12 @@ export default defineConfig({
   projectId,
   dataset,
   basePath: '/admin',
+  theme: uniqlettsTheme,
+  studio: {
+    components: {
+      logo: StudioLogo,
+    },
+  },
   plugins: [
     structureTool({ structure }),
     visionTool(),

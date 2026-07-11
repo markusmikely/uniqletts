@@ -32,7 +32,7 @@ const STEPS = [
 
 export default function LandlordsPage() {
   useEffect(() => {
-    document.title = 'Landlord Services Bayswater W2 | Lettings & Management | Uniqletts'
+    document.title = 'Landlord Services London | Lettings & Property Management | Uniqletts'
   }, [])
 
   return (
@@ -41,7 +41,7 @@ export default function LandlordsPage() {
         eyebrow="Landlord services"
         title="Let your property with confidence"
         subtitle="Straightforward fees, expert local knowledge, and a genuinely personal service — from the first valuation to the day your tenants move out."
-        image="/images/heroes/landlords.jpg"
+        image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 40%"
       >
         <Link to="/valuations" className="btn btn-accent">Get a free valuation</Link>
@@ -106,10 +106,10 @@ export default function LandlordsPage() {
               <p className="eyebrow" style={{ marginBottom: '0.5rem' }}>Why Uniqletts</p>
               <h2 className={styles.sectionTitle}>Local expertise,<br />personal service</h2>
               <p className={styles.bodyText}>
-                We're not a corporate franchise. We're an independent, family-run agency that has been managing properties in Bayswater and W2 for over 15 years. Our landlords come back to us again and again because we treat their properties as if they were our own.
+                We're not a corporate franchise. We're an independent agency that has been letting and managing properties across central and Greater London for 20 years. Our landlords come back to us again and again because we treat their properties as if they were our own.
               </p>
               <p className={styles.bodyText}>
-                Every landlord has a named contact. Every maintenance issue is handled promptly. Every tenancy is managed with care. No call centres, no junior staff handing you off — just direct, expert service from people who know W2 inside out.
+                Every landlord has a named contact. Every maintenance issue is handled promptly. Every tenancy is managed with care. No call centres, no junior staff handing you off — just direct, expert service from people who know the London market inside out.
               </p>
             </div>
             <div className={styles.complianceBox}>

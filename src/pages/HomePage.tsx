@@ -11,7 +11,7 @@ import {
 
 export default function HomePage() {
   useEffect(() => {
-    document.title = 'Estate Agents Bayswater W2 | Lettings & Sales | Uniqletts'
+    document.title = 'Estate & Letting Agents London | Lettings, Sales & Management | Uniqletts'
   }, [])
 
   return (

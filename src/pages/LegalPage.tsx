@@ -46,7 +46,7 @@ export default function LegalPage({ slug, fallbackTitle }: LegalPageProps) {
 
   return (
     <>
-      <PageHero eyebrow="Legal" title={title} subtitle="" image="/images/heroes/about.jpg" imagePosition="center 30%" />
+      <PageHero eyebrow="Legal" title={title} subtitle="" image="https://images.unsplash.com/photo-1510265119258-db115b0e8172?w=1800&q=80&auto=format&fit=crop" imagePosition="center 30%" />
       <section className={`section ${styles.section}`}>
         <div className="container" style={{ maxWidth: 720 }}>
           {page?.body ? (

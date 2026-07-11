@@ -122,6 +122,63 @@
   flex-wrap: wrap;
 }
 
+/* ---- Block management ------------------------------------ */
+.blockMgmt {
+  background: var(--color-xlight);
+  border-top: 1px solid var(--color-light);
+  border-bottom: 1px solid var(--color-light);
+}
+
+.blockMgmtInner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.blockMgmtCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+
+.blockMgmtTitle {
+  max-width: 20ch;
+}
+
+.blockMgmtBody {
+  font-size: 0.9375rem;
+  color: var(--color-gray-600);
+  line-height: 1.75;
+  max-width: 58ch;
+}
+
+.blockMgmtList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.blockMgmtItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--color-charcoal);
+}
+
+.blockMgmtCheck {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+@media (min-width: 900px) {
+  .blockMgmtInner { grid-template-columns: 1.2fr 1fr; gap: 4rem; }
+}
+
 /* ---- Area highlight -------------------------------------- */
 .area {
   background: var(--color-white);

@@ -4,6 +4,10 @@ import type { Property, Review } from '@/types'
 export const MOCK_PROPERTIES: Property[] = [
   {
     slug: 'queensway-w2-2bed',
+    geopoint: { lat: 51.5136, lng: -0.1873 },
+    propertyType: 'flat',
+    features: ['Balcony', 'Lift', 'Furnished'],
+    excerpt: 'A bright and spacious two bedroom flat moments from Hyde Park, with a private balcony and lift access.',
     title: 'Bright 2-bedroom flat on Queensway',
     address: { line1: 'Queensway', area: 'Bayswater', postcode: 'W2' },
     listingType: 'lettings',
@@ -18,6 +22,10 @@ export const MOCK_PROPERTIES: Property[] = [
   },
   {
     slug: 'redan-place-w2-1bed',
+    geopoint: { lat: 51.5142, lng: -0.1889 },
+    propertyType: 'flat',
+    features: ['Furnished'],
+    excerpt: 'A neat one bedroom flat on quiet Redan Place, fully furnished and ready to move into.',
     title: '1-bedroom flat on Redan Place',
     address: { line1: 'Redan Place', area: 'Bayswater', postcode: 'W2' },
     listingType: 'lettings',
@@ -32,6 +40,10 @@ export const MOCK_PROPERTIES: Property[] = [
   },
   {
     slug: 'hyde-park-gate-3bed',
+    geopoint: { lat: 51.5119, lng: -0.1756 },
+    propertyType: 'flat',
+    features: ['Garden', 'Concierge'],
+    excerpt: 'A generous three bedroom apartment near Lancaster Gate with communal garden and concierge.',
     title: '3-bedroom flat near Lancaster Gate',
     address: { line1: 'Lancaster Gate', area: 'W2', postcode: 'W2' },
     listingType: 'lettings',
@@ -46,6 +58,10 @@ export const MOCK_PROPERTIES: Property[] = [
   },
   {
     slug: 'leinster-gardens-2bed',
+    geopoint: { lat: 51.5125, lng: -0.1837 },
+    propertyType: 'flat',
+    features: ['Balcony'],
+    excerpt: 'A well presented two bedroom flat on Leinster Gardens.',
     title: '2-bedroom flat on Leinster Gardens',
     address: { line1: 'Leinster Gardens', area: 'W2', postcode: 'W2' },
     listingType: 'lettings',
@@ -59,6 +75,10 @@ export const MOCK_PROPERTIES: Property[] = [
   },
   {
     slug: 'porchester-road-sale',
+    geopoint: { lat: 51.5178, lng: -0.1926 },
+    propertyType: 'flat',
+    features: ['Parking'],
+    excerpt: 'A two bedroom flat for sale on Porchester Road with allocated parking.',
     title: '2-bedroom flat on Porchester Road',
     address: { line1: 'Porchester Road', area: 'W2', postcode: 'W2' },
     listingType: 'sales',
@@ -73,6 +93,10 @@ export const MOCK_PROPERTIES: Property[] = [
   },
   {
     slug: 'westbourne-grove-1bed',
+    geopoint: { lat: 51.5155, lng: -0.1962 },
+    propertyType: 'flat',
+    features: ['Gym'],
+    excerpt: 'A stylish one bedroom flat on Westbourne Grove with residents gym.',
     title: '1-bedroom flat on Westbourne Grove',
     address: { line1: 'Westbourne Grove', area: 'W2', postcode: 'W2' },
     listingType: 'lettings',

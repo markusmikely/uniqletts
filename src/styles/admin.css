@@ -1,0 +1,69 @@
+/* ============================================================
+   UNIQLETTS ADMIN — Studio chrome overrides
+   Loaded only on /admin (imported by AdminPage.tsx).
+   Aligns the embedded Sanity Studio with the front-end brand:
+   Nunito Sans, brand blues (#086fb8), soft blue tints, rounded
+   corners — with a dashboard-first, information-dense feel.
+   ============================================================ */
+
+/* Brand typeface across the whole studio */
+[data-ui],
+.sanity-studio,
+#sanity {
+  font-family: 'Nunito Sans', system-ui, sans-serif !important;
+}
+
+/* Top navbar — charcoal bar matching the front-end footer */
+[data-ui='Navbar'] {
+  background: #2e3640 !important;
+  border-bottom: 3px solid #086fb8 !important;
+}
+
+/* Workspace title in the navbar → brand weight */
+[data-ui='Navbar'] [data-ui='Text'] {
+  font-weight: 800 !important;
+  letter-spacing: -0.02em;
+}
+
+/* Sidebar / pane headers — soft brand tint like .sectionTint */
+[data-ui='PaneHeader'] {
+  background: #f0f7fc !important;
+  border-bottom: 1px solid #ddeef7 !important;
+}
+
+[data-ui='PaneHeader'] h2 {
+  font-weight: 700 !important;
+  color: #2e3640 !important;
+  letter-spacing: -0.01em;
+}
+
+/* Desk structure list items — rounded hover with brand tint */
+[data-ui='Pane'] [data-as='a'],
+[data-ui='Pane'] [data-as='button'] {
+  border-radius: 6px;
+}
+
+[data-ui='Pane'] [data-as='a']:hover,
+[data-ui='Pane'] [data-as='button']:hover {
+  background-color: #f0f7fc !important;
+}
+
+/* Selected list item — brand blue edge */
+[data-ui='Pane'] [data-selected] {
+  box-shadow: inset 3px 0 0 #086fb8;
+}
+
+/* Primary buttons — match front-end accent behaviour */
+[data-ui='Button'][data-tone='primary'] {
+  border-radius: 10px !important;
+}
+
+/* Cards & dialogs — front-end radius */
+[data-ui='Card'][data-radius] {
+  border-radius: 10px;
+}
+
+/* Document status bar / footer */
+[data-ui='DocumentStatusBar'] {
+  border-top: 1px solid #ddeef7;
+}

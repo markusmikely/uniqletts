@@ -53,7 +53,7 @@ export default function PageHero({
       {hasImage && (
         <>
           <img
-            src={'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=2400&q=85&auto=format&fit=crop&crop=center'}//image}
+            src={image}
             alt={imageAlt}
             className={styles.bgImage}
             style={{ objectPosition: imagePosition }}

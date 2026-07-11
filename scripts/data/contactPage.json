@@ -1,0 +1,50 @@
+[
+ {
+  "_createdAt": "2022-07-05T12:58:21Z",
+  "_id": "afa6ede0-54ae-4d59-934d-14da77e49023",
+  "_type": "contactPage",
+  "_updatedAt": "2022-07-07T00:55:18Z",
+  "address1": "Suite 14",
+  "address2": "23 Redan Place",
+  "companyName": "UNIQLETTS LIMITED",
+  "content": [
+   {
+    "_key": "3c58e713ff66",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "b6878561dd120",
+      "_type": "span",
+      "marks": [],
+      "text": "If you would like us to contact you, please use the form below to submit your request."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "b505fe8b922e",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "63f4c2c9e7a10",
+      "_type": "span",
+      "marks": [],
+      "text": "If you would like to register your property requirements with us or be added to our mailing list you can do this via our registration form."
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "mondayToFriday": "9am to 6pm",
+  "officeHoursTitle": "OFFICE HOURS",
+  "postcode": "W2 4SA",
+  "saturdayViewings": "10am to 4pm",
+  "subtitle": "DO YOU HAVE A QUERY?",
+  "telephone": "0207 221 4000",
+  "title": "CONTACT US",
+  "town": "Bayswater",
+  "viewingHours": "9am to 7:30pm"
+ }
+]

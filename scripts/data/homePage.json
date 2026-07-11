@@ -1,0 +1,47 @@
+[
+ {
+  "_createdAt": "2022-07-05T12:36:57Z",
+  "_id": "c607ace3-0f2a-45c1-8816-37669a5aae69",
+  "_type": "home",
+  "_updatedAt": "2022-07-21T07:14:48Z",
+  "featureTitle": "A SELECTION OF OUR FAVOURITE PROPERTIES",
+  "heroContent": "Need to know your potential rental or sales valuation of your property? Complete our quick form, for your property valuation today",
+  "investmentsContent": [
+   {
+    "_key": "94501111b8fb",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "d7961b31931d0",
+      "_type": "span",
+      "marks": [],
+      "text": "Free, no-obligation property valuation for all homes in London & Surrey"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   },
+   {
+    "_key": "790de7421cd7",
+    "_type": "block",
+    "children": [
+     {
+      "_key": "ca878c5126310",
+      "_type": "span",
+      "marks": [
+       "strong"
+      ],
+      "text": "Extended? Renovated? Remortgaging? Considering selling later? Or just curious?"
+     }
+    ],
+    "markDefs": [],
+    "style": "normal"
+   }
+  ],
+  "investmentsSubTitle": "How much is your home worth?",
+  "investmentsTitle": "PROPERTY INVESTMENTS",
+  "reviewsTitle": "WHAT OUR CUSTOMERS HAVE HAD TO SAY",
+  "subtitle": "Providing the highest quality agency 20 years of experience through out London",
+  "title": "A UNIQUE PROPERTY EXPERIENCE"
+ }
+]
