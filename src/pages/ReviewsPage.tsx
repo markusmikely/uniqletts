@@ -46,7 +46,7 @@ export default function ReviewsPage() {
         eyebrow="Client stories"
         title="What our clients say"
         subtitle="Read reviews from landlords, tenants and buyers who have worked with Uniqletts."
-        image="https://images.unsplash.com/photo-1565128541365-2b16f6685458?w=1800&q=80&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1714647212067-2fd0fa63ccf4?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 30%"
       />
 

@@ -41,7 +41,7 @@ export default function LandlordsPage() {
         eyebrow="Landlord services"
         title="Let your property with confidence"
         subtitle="Straightforward fees, expert local knowledge, and a genuinely personal service — from the first valuation to the day your tenants move out."
-        image="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1800&q=80&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1722487631997-cf1e0f92c2c4?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 40%"
       >
         <Link to="/valuations" className="btn btn-accent">Get a free valuation</Link>

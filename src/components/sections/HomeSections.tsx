@@ -207,8 +207,8 @@ export function AreaHighlight() {
     <section className={`section ${styles.area}`}>
       <div className={`container ${styles.areaInner}`}>
         <div className={styles.areaImageWrap}>
-          <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=900&q=75&auto=format&fit=crop" alt="Hyde Park, Bayswater" className={styles.areaImage} width={900} height={700} loading="lazy" decoding="async" />
-          <div className={styles.areaImageCaption}>{copy?.imageCaption ?? 'Hyde Park — on your doorstep'}</div>
+          <img src="https://images.unsplash.com/photo-1562280963-8a5475740a10?w=900&q=75&auto=format&fit=crop" alt="The new shopping centre in Bayswater, London" className={styles.areaImage} width={900} height={700} loading="lazy" decoding="async" />
+          <div className={styles.areaImageCaption}>{copy?.imageCaption ?? 'The Whiteley, Queensway — on your doorstep'}</div>
         </div>
         <div className={styles.areaCopy}>
           <p className="eyebrow">{eyebrow}</p>

@@ -45,7 +45,7 @@ export function TenantsPage() {
         eyebrow="For tenants"
         title="Find your perfect home in London"
         subtitle="We work hard to match you with the right property — and we're here to support you throughout your tenancy, not just on move-in day."
-        image="https://images.unsplash.com/photo-1637778131703-c25a9fe25c26?w=1800&q=80&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1758687125973-ec9932a4245b?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 25%"
       >
         <Link to="/properties?type=lettings" className="btn btn-accent">Browse lettings</Link>
@@ -317,10 +317,10 @@ export function AreaGuidePage() {
   }, [])
 
   const SECTIONS = [
-    { title: 'Hyde Park & green spaces', img: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=75&auto=format&fit=crop', body: 'Hyde Park sits immediately south of Bayswater — one of London\'s largest Royal Parks and arguably its most loved. Kensington Gardens, the Serpentine Gallery and the Italian Gardens are all within a 10-minute walk. For residents, this means morning runs, weekend picnics and world-class outdoor events year-round.' },
-    { title: 'Queensway & Whiteleys', img: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=75&auto=format&fit=crop', body: 'Queensway is one of London\'s most vibrant and cosmopolitan high streets, currently mid a £1 billion regeneration anchored by the return of Whiteleys — a luxury mixed-use development with boutique cinema, restaurants and residential units. The area already has an outstanding range of restaurants, cafés and independent shops.' },
-    { title: 'Transport links', img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=75&auto=format&fit=crop', body: 'Transport connectivity is exceptional. Bayswater and Queensway stations provide Central, Circle and District line access. Paddington — just 10 minutes on foot — offers the Elizabeth line (Crossrail) to Heathrow in 26 minutes and Heathrow Express in 15. Multiple bus routes connect to the West End and wider London.' },
-    { title: 'Schools & education', img: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&q=75&auto=format&fit=crop', body: 'Families are well served by a range of good and outstanding schools. Southbank International School and the Maria Montessori School are nearby, alongside numerous primary schools rated Good or Outstanding by Ofsted. Westminster Academy and several independent schools are within easy reach.' },
+    { title: 'Hyde Park & green spaces', img: 'https://images.unsplash.com/photo-1560706834-c8b400d29d37?w=800&q=75&auto=format&fit=crop', body: 'Hyde Park sits immediately south of Bayswater — one of London\'s largest Royal Parks and arguably its most loved. Kensington Gardens, the Serpentine Gallery and the Italian Gardens are all within a 10-minute walk. For residents, this means morning runs, weekend picnics and world-class outdoor events year-round.' },
+    { title: 'Queensway & Whiteleys', img: 'https://images.unsplash.com/photo-1696779917945-6f308c339e63?w=800&q=75&auto=format&fit=crop', body: 'Queensway is one of London\'s most vibrant and cosmopolitan high streets, currently mid a £1 billion regeneration anchored by the return of Whiteleys — a luxury mixed-use development with boutique cinema, restaurants and residential units. The area already has an outstanding range of restaurants, cafés and independent shops.' },
+    { title: 'Transport links', img: 'https://images.unsplash.com/photo-1675233461649-e8dc9d0d41f7?w=800&q=75&auto=format&fit=crop', body: 'Transport connectivity is exceptional. Bayswater and Queensway stations provide Central, Circle and District line access. Paddington — just 10 minutes on foot — offers the Elizabeth line (Crossrail) to Heathrow in 26 minutes and Heathrow Express in 15. Multiple bus routes connect to the West End and wider London.' },
+    { title: 'Schools & education', img: 'https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=75&auto=format&fit=crop', body: 'Families are well served by a range of good and outstanding schools. Southbank International School and the Maria Montessori School are nearby, alongside numerous primary schools rated Good or Outstanding by Ofsted. Westminster Academy and several independent schools are within easy reach.' },
   ]
 
   return (
@@ -404,7 +404,7 @@ export function AboutPage() {
         eyebrow="About us"
         title="Independent, family-run, and genuinely local"
         subtitle="Uniqletts was founded on a simple belief: that buying, selling and renting property should be a personal experience — not a transaction processed by a call centre."
-        image="https://images.unsplash.com/photo-1573497701240-345a300b8d36?w=1800&q=80&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1588021624472-f8345116c8f2?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 30%"
       />
 
@@ -420,8 +420,8 @@ export function AboutPage() {
             </div>
             <div>
               <img
-                src="https://images.unsplash.com/photo-1573164574511-73c773193279?w=700&q=75&auto=format&fit=crop"
-                alt="The Uniqletts team working together at the office"
+                src="https://images.unsplash.com/photo-1741156386380-0236c72eb6f9?w=700&q=75&auto=format&fit=crop"
+                alt="A letting agent handing over the keys to a new home"
                 style={{ width: '100%', borderRadius: 'var(--radius-xl)', aspectRatio: '4/3', objectFit: 'cover' }}
                 width={700} height={525} loading="lazy"
               />
@@ -498,7 +498,7 @@ export function ContactPage() {
         eyebrow="Get in touch"
         title="We'd love to hear from you"
         subtitle="Whether you're looking to rent, let, buy or sell — we're here to help. Call us, email, or fill in the form below."
-        image="https://images.unsplash.com/photo-1758611974917-f7f7a58b74b0?w=1800&q=80&auto=format&fit=crop"
+        image="https://images.unsplash.com/photo-1689848693914-7ba25d9f3334?w=1800&q=80&auto=format&fit=crop"
         imagePosition="center 35%"
       />
 
