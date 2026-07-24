@@ -9,7 +9,7 @@ import styles from './Hero.module.css'
   dark overlay so any well-lit lifestyle shot works.
   Current image: a couple at home in their kitchen (Unsplash).
 */
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1602780765205-532dc7f6ded3?w=2400&q=85&auto=format&fit=crop'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=2400&q=85&auto=format&fit=crop'
 
 type ListingType = 'lettings' | 'sales'
 
@@ -34,7 +34,7 @@ export default function Hero() {
       {/* Full-bleed background image */}
       <img
         src={HERO_IMAGE}
-        alt="A couple at home in their London flat"
+        alt="Modern apartment living room in London"
         className={styles.bgImage}
         width={2400}
         height={1600}
@@ -157,8 +157,8 @@ export default function Hero() {
           <Link to="/valuations" className={styles.ctaAccent}>
             Book a free valuation
           </Link>
-          <a href="tel:+442035442456" className={styles.ctaGhost}>
-            Call 020 3544 2456
+          <a href="tel:+02072214000" className={styles.ctaGhost}>
+            Call 0207 221 4000
           </a>
         </div>
       </div>

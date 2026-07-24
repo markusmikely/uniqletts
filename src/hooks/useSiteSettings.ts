@@ -22,9 +22,9 @@ export interface SiteSettingsData {
 }
 
 const DEFAULTS: SiteSettingsData = {
-  phone: '020 3544 2456',
-  email: 'hello@uniqletts.com',
-  whatsappNumber: '442035442456',
+  phone: '0207 221 4000',
+  email: 'info@uniqletts.com',
+  whatsappNumber: '4402072214000',
   officeAddress: 'Suite 14, 23 Redan Place\nBayswater, London W2 4SA',
   openingHours: {
     weekdays: '9:00am – 6:00pm',

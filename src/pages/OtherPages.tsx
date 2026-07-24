@@ -146,7 +146,7 @@ export function TenantsPage() {
                 <div className={styles.infoPanelList}>
                   <div className={styles.infoPanelItem}><strong>Gas emergency:</strong> National Gas 0800 111 999</div>
                   <div className={styles.infoPanelItem}><strong>Electricity:</strong> UK Power Networks 105</div>
-                  <div className={styles.infoPanelItem}><strong>Uniqletts:</strong> 020 3544 2456</div>
+                  <div className={styles.infoPanelItem}><strong>Uniqletts:</strong> 0207 221 4000</div>
                 </div>
               </div>
             </div>
@@ -356,22 +356,14 @@ export function AreaGuidePage() {
       {SECTIONS.map((s, i) => (
         <section key={s.title} className={`section ${i % 2 === 1 ? styles.sectionTint : styles.section}`}>
           <div className="container">
-            <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '2rem', alignItems: 'center' }}>
-              {i % 2 === 0 ? (
-                <>
-                  <div style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', aspectRatio: '16/9' }}>
-                    <img src={s.img} alt={s.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} width={800} height={450} loading="lazy" />
-                  </div>
-                  <div><h2 style={{ marginBottom: '1rem' }}>{s.title}</h2><p className={styles.bodyText}>{s.body}</p></div>
-                </>
-              ) : (
-                <>
-                  <div><h2 style={{ marginBottom: '1rem' }}>{s.title}</h2><p className={styles.bodyText}>{s.body}</p></div>
-                  <div style={{ borderRadius: 'var(--radius-xl)', overflow: 'hidden', aspectRatio: '16/9' }}>
-                    <img src={s.img} alt={s.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} width={800} height={450} loading="lazy" />
-                  </div>
-                </>
-              )}
+            <div className={`${styles.areaRow} ${i % 2 === 1 ? styles.areaRowReverse : ''}`}>
+              <div className={styles.areaRowMedia}>
+                <img src={s.img} alt={s.title} width={800} height={600} loading="lazy" />
+              </div>
+              <div>
+                <h2 className={styles.areaRowTitle}>{s.title}</h2>
+                <p className={styles.bodyText}>{s.body}</p>
+              </div>
             </div>
           </div>
         </section>

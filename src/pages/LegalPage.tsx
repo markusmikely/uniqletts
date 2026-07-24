@@ -14,7 +14,7 @@ interface LegalPageProps {
 const FALLBACK: Record<string, { title: string; body: string }> = {
   privacy: {
     title: 'Privacy Policy',
-    body: 'This privacy policy explains how Uniqletts Ltd collects, uses, and protects your personal information when you use our website or services. For the full policy, please contact us at hello@uniqletts.com.',
+    body: 'This privacy notice explains how Uniqletts Limited collects, uses, shares and protects your personal data when you use our website or services, and sets out your rights under the UK GDPR and Data Protection Act 2018. For the full policy or any data request, please contact us at info@uniqletts.com.',
   },
   terms: {
     title: 'Terms of Use',
@@ -46,17 +46,28 @@ export default function LegalPage({ slug, fallbackTitle }: LegalPageProps) {
 
   return (
     <>
-      <PageHero eyebrow="Legal" title={title} subtitle="" image="https://images.unsplash.com/photo-1510265119258-db115b0e8172?w=1800&q=80&auto=format&fit=crop" imagePosition="center 30%" />
-      <section className={`section ${styles.section}`}>
-        <div className="container" style={{ maxWidth: 720 }}>
-          {page?.body ? (
-            <PortableText value={page.body} className={styles.bodyText} />
-          ) : (
-            <p className={styles.bodyText}>{fallback.body}</p>
-          )}
-          <p style={{ marginTop: '2rem' }}>
-            <Link to="/contact" className="btn btn-ghost">Contact us →</Link>
-          </p>
+      <PageHero eyebrow="Legal" title={title} subtitle="" image="https://images.unsplash.com/photo-1681407979872-0a4cbde28391?w=2400&q=85&auto=format&fit=crop" imagePosition="center 62%" />
+      <section className={`section ${styles.sectionTint}`}>
+        <div className="container">
+          <div className={styles.prose}>
+            <div className={styles.proseCard}>
+              <span className={styles.proseMeta}>
+                <svg width="14" height="14" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" aria-hidden="true">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6l4 2m6-2a10 10 0 11-20 0 10 10 0 0120 0z" />
+                </svg>
+                Last updated July 2026
+              </span>
+              {page?.body ? (
+                <PortableText value={page.body} className={styles.bodyText} />
+              ) : (
+                <p className={styles.bodyText}>{fallback.body}</p>
+              )}
+              <div className={styles.proseFooter}>
+                <span className={styles.bodyText} style={{ marginBottom: 0 }}>Questions about this policy?</span>
+                <Link to="/contact" className="btn btn-primary">Contact us →</Link>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
