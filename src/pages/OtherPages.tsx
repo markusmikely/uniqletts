@@ -296,7 +296,7 @@ export function ValuationsPage() {
                 </div>
               </div>
               <div className={styles.infoPanelCard} style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-                <p className={styles.infoPanelTitle} style={{ marginBottom: 0 }}>Speak to Rupa directly</p>
+                <p className={styles.infoPanelTitle} style={{ marginBottom: 0 }}>Call us directly</p>
                 <a href={`tel:+${settings.phone?.replace(/\s/g, '')}`} style={{ fontFamily: 'var(--font-display)', fontSize: '1.25rem', color: 'var(--color-primary)', textDecoration: 'none' }}>{settings.phone}</a>
                 <a href={`mailto:${settings.email}`} style={{ fontSize: '0.9rem', color: 'var(--color-gray-600)' }}>{settings.email}</a>
               </div>

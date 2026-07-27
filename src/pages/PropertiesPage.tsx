@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState, lazy, Suspense } from 'react'
 import { Link, useSearchParams } from 'react-router-dom'
 import PageHero from '@/components/ui/PageHero'
+import CardGallery, { type CardImage } from '@/components/properties/CardGallery'
 import { getAllProperties, sanityReady, imageUrl } from '@/lib/sanity'
 import { MOCK_PROPERTIES } from '@/lib/mock'
 import { formatPrice, formatAddress } from '@/lib/format'
@@ -100,6 +101,17 @@ function getImage(p: Property, width = 600): string {
   return ''
 }
 
+/** All card photos as ready-to-render URLs, falling back to the single
+    main image (or a mock string URL) when the full list isn't available. */
+function getCardImages(p: Property, width = 600): CardImage[] {
+  const list = (p.cardImages ?? [])
+    .map(img => ({ url: img.asset ? imageUrl(img.asset, width) : '', alt: img.alt }))
+    .filter(img => img.url)
+  if (list.length) return list
+  const single = getImage(p, width)
+  return single ? [{ url: single, alt: p.mainImageAlt }] : []
+}
+
 /* ---- view icons -------------------------------------------- */
 const VIEW_META: { id: ViewMode; label: string; icon: React.ReactNode }[] = [
   {
@@ -146,13 +158,14 @@ function CardBadges({ p }: { p: Property }) {
 
 function GridCard({ p, index }: { p: Property; index: number }) {
   const addr = formatAddress(p.address)
-  const img = getImage(p)
+  const images = getCardImages(p)
   return (
     <Link to={`/properties/${p.slug}`} className={`card ${styles.propCard} animate-fade-up delay-${Math.min(index + 1, 5)}`}>
       <div className={styles.imageWrap}>
-        {img && <img src={img} alt={p.mainImageAlt ?? `Property at ${addr}`} className={styles.image} width={600} height={400} loading="lazy" decoding="async" />}
-        {p.tag && <span className={`badge badge-accent ${styles.tagOverlay}`}>{p.tag}</span>}
-        {STATUS_LABEL[p.status] && <span className={`badge badge-gray ${styles.statusOverlay}`}>{STATUS_LABEL[p.status]}</span>}
+        <CardGallery images={images} altBase={`Property at ${addr}`} width={600} height={400}>
+          {p.tag && <span className={`badge badge-accent ${styles.tagOverlay}`}>{p.tag}</span>}
+          {STATUS_LABEL[p.status] && <span className={`badge badge-gray ${styles.statusOverlay}`}>{STATUS_LABEL[p.status]}</span>}
+        </CardGallery>
       </div>
       <div className={styles.body}>
         <p className={styles.price}>{formatPrice(p.price, p.pricePeriod)}</p>
@@ -165,13 +178,14 @@ function GridCard({ p, index }: { p: Property; index: number }) {
 
 function ListCard({ p }: { p: Property }) {
   const addr = formatAddress(p.address)
-  const img = getImage(p, 500)
+  const images = getCardImages(p, 500)
   const excerpt = (p.excerpt ?? '').replace(/\s+/g, ' ').trim()
   return (
     <Link to={`/properties/${p.slug}`} className={`card ${styles.listCard}`}>
       <div className={styles.listImageWrap}>
-        {img && <img src={img} alt={p.mainImageAlt ?? `Property at ${addr}`} className={styles.image} width={500} height={340} loading="lazy" decoding="async" />}
-        {STATUS_LABEL[p.status] && <span className={`badge badge-gray ${styles.statusOverlay}`}>{STATUS_LABEL[p.status]}</span>}
+        <CardGallery images={images} altBase={`Property at ${addr}`} width={500} height={340}>
+          {STATUS_LABEL[p.status] && <span className={`badge badge-gray ${styles.statusOverlay}`}>{STATUS_LABEL[p.status]}</span>}
+        </CardGallery>
       </div>
       <div className={styles.listBody}>
         <div className={styles.listHeader}>
@@ -192,7 +206,7 @@ function ListCard({ p }: { p: Property }) {
 
 function MapCard({ p, selected, onHover }: { p: Property; selected: boolean; onHover: () => void }) {
   const addr = formatAddress(p.address)
-  const img = getImage(p, 400)
+  const images = getCardImages(p, 400)
   return (
     <Link
       to={`/properties/${p.slug}`}
@@ -202,7 +216,7 @@ function MapCard({ p, selected, onHover }: { p: Property; selected: boolean; onH
       onFocus={onHover}
     >
       <div className={styles.mapCardImageWrap}>
-        {img && <img src={img} alt={p.mainImageAlt ?? `Property at ${addr}`} className={styles.image} width={400} height={260} loading="lazy" decoding="async" />}
+        <CardGallery images={images} altBase={`Property at ${addr}`} width={400} height={260} />
       </div>
       <div className={styles.mapCardBody}>
         <p className={styles.mapCardPrice}>{formatPrice(p.price, p.pricePeriod)}</p>

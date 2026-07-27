@@ -46,6 +46,7 @@ export const PROPERTY_CARD_FIELDS = `
   tag,
   "mainImage": images[0].asset,
   "mainImageAlt": images[0].alt,
+  "cardImages": images[]{ alt, "asset": asset },
 `
 
 export const PROPERTY_DETAIL_FIELDS = `

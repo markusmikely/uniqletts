@@ -1,0 +1,94 @@
+.wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-charcoal);
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(46, 54, 64, 0.25);
+  opacity: 0;
+  transition: opacity var(--transition), background var(--transition);
+  z-index: 2;
+}
+
+.arrowPrev { left: 0.5rem; }
+.arrowNext { right: 0.5rem; }
+
+.arrow:hover { background: var(--color-white); }
+.arrow:focus-visible { opacity: 1; outline: 2px solid var(--color-primary); outline-offset: 2px; }
+
+/* Reveal arrows on card hover (desktop). Always visible on touch. */
+.wrap:hover .arrow { opacity: 1; }
+
+@media (hover: none) {
+  .arrow { opacity: 0.9; }
+}
+
+/* Photo counter badge */
+.counter {
+  position: absolute;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 100px;
+  background: rgba(46, 54, 64, 0.72);
+  color: var(--color-white);
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  z-index: 2;
+}
+
+/* Dot indicators */
+.dots {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.3rem;
+  z-index: 2;
+  max-width: 60%;
+  overflow: hidden;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 0 2px rgba(46, 54, 64, 0.4);
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.dotActive {
+  background: var(--color-white);
+  transform: scale(1.3);
+}

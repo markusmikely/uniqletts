@@ -1,6 +1,9 @@
 import { Link } from 'react-router-dom'
 import styles from './Footer.module.css'
 import logo from '../../assets/logo.webp'
+import prsLogo from '../../assets/prs.webp'
+import tdsLogo from '../../assets/tds.webp'
+import cmpLogo from '../../assets/cmp.webp'
 import { useSiteSettings, getSocialLinks } from '@/hooks/useSiteSettings'
 
 /* ── Nav link columns ─────────────────────────────────────── */
@@ -69,9 +72,9 @@ const SOCIAL_ICONS: Record<string, { icon: React.ReactNode; color: string }> = {
 }
 
 const ACCREDITATIONS = [
-  { id: 'prs', label: 'Property Redress Scheme' },
-  { id: 'tds', label: 'Tenancy Deposit Scheme' },
-  { id: 'cmp', label: 'Client Money Protection' },
+  { id: 'prs', label: 'Property Redress Scheme', src: prsLogo },
+  { id: 'tds', label: 'Tenancy Deposit Scheme', src: tdsLogo },
+  { id: 'cmp', label: 'Client Money Protection', src: cmpLogo },
 ]
 
 const PLATFORM_LABELS: Record<string, string> = {
@@ -154,7 +157,7 @@ export default function Footer() {
             {ACCREDITATIONS.map(a => (
               <div key={a.id} className={styles.accreditationBadge}>
                 <img
-                  src={`/src/assets/${a.id}.webp`}
+                  src={a.src}
                   alt={a.label}
                   className={styles.accreditationImg}
                   width={80}

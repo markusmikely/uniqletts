@@ -25,6 +25,8 @@ export interface Property {
   images?: PropertyImage[]
   mainImage?: unknown
   mainImageAlt?: string
+  /** Lightweight image list for card carousels (asset ref + alt). */
+  cardImages?: { asset?: unknown; alt?: string }[]
   video?: { type?: string; url?: string }
   videoTourUrl?: string
   floorplanUrl?: string

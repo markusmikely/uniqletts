@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react'
 import { useParams, Link } from 'react-router-dom'
 import PortableText from '@/components/ui/PortableText'
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon'
 import { getPropertyBySlug, getVideoEmbedUrl } from '@/lib/sanity'
 import { trackPropertyView, submitEnquiry } from '@/lib/api'
 import { formatPrice, formatAddress, whatsappPropertyUrl } from '@/lib/format'
@@ -275,13 +276,14 @@ export default function PropertyDetail() {
                 </form>
 
                 {waUrl && (
-                  <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', marginTop: '0.75rem', textAlign: 'center' }}>
+                  <a href={waUrl} target="_blank" rel="noopener noreferrer" className="btn btn-primary" style={{ width: '100%', marginTop: '0.75rem', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', gap: '0.5rem' }}>
+                    <WhatsAppIcon size={18} />
                     WhatsApp about this property
                   </a>
                 )}
 
                 <div className={styles.agentContact}>
-                  <p className={styles.agentName}>Speak to Rupa</p>
+                  <p className={styles.agentName}>Call us</p>
                   <a href={`tel:+${settings.phone?.replace(/\s/g, '') ?? '442035442456'}`} className={styles.agentPhone}>{settings.phone}</a>
                 </div>
               </>
