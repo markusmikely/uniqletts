@@ -1,6 +1,7 @@
 import { createClient } from '@sanity/client'
 import imageUrlBuilder from '@sanity/image-url'
 import type { Property, Review } from '@/types'
+import { MOCK_PROPERTIES } from './mock'
 
 const projectId = import.meta.env.VITE_SANITY_PROJECT_ID
 const dataset = import.meta.env.VITE_SANITY_DATASET ?? 'production'
@@ -122,7 +123,9 @@ export async function getAllProperties(filters?: {
 }
 
 export async function getPropertyBySlug(slug: string) {
-  if (!sanityReady) return null
+  // Mirror the list/featured fallback so cards never link to a dead
+  // detail page when Sanity isn't configured (e.g. missing env vars).
+  if (!sanityReady) return MOCK_PROPERTIES.find(p => p.slug === slug) ?? null
   return client.fetch(
     `*[_type == "property" && slug.current == $slug][0] {
       ${PROPERTY_DETAIL_FIELDS}
