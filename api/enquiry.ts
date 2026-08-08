@@ -5,7 +5,7 @@ import {
   corsHeaders,
   isSpam,
   validateEmail,
-} from './_server'
+} from './_server.js'
 
 interface EnquiryPayload {
   type: 'valuation' | 'viewing' | 'contact' | 'maintenance' | 'general'

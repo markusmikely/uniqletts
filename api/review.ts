@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getWriteClient, corsHeaders, isSpam, validateEmail } from './_server'
+import { getWriteClient, corsHeaders, isSpam, validateEmail } from './_server.js'
 
 interface ReviewPayload {
   author: string

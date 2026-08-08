@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { getWriteClient, sendEmail, corsHeaders } from './_server'
+import { getWriteClient, sendEmail, corsHeaders } from './_server.js'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   Object.entries(corsHeaders()).forEach(([k, v]) => res.setHeader(k, v))
