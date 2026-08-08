@@ -32,7 +32,9 @@ export default defineConfig({
         manualChunks: {
           vendor: ['react', 'react-dom'],
           router: ['react-router-dom'],
-          sanity: ['sanity', '@sanity/vision'],
+          // NB: do not manually chunk `sanity` / `@sanity/vision` — that forces
+          // the 1.3 MB Studio bundle to preload on every page. Left to Vite it
+          // stays a dynamic chunk that only loads on /admin.
         },
       },
     },

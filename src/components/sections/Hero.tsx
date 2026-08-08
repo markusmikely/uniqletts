@@ -9,7 +9,7 @@ import styles from './Hero.module.css'
   dark overlay so any well-lit lifestyle shot works.
   Current image: a couple at home in their kitchen (Unsplash).
 */
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=2400&q=85&auto=format&fit=crop'
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&q=80&auto=format&fit=crop'
 
 type ListingType = 'lettings' | 'sales'
 

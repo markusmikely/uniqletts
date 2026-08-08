@@ -1,10 +1,15 @@
 import { lazy, Suspense } from 'react'
-import config from '../../sanity.config'
 import '@/styles/admin.css'
 
-const Studio = lazy(() =>
-  import('sanity').then(mod => ({ default: mod.Studio }))
-)
+// Import BOTH the Studio and its config dynamically so nothing here pulls the
+// heavy `sanity` bundle into the public/homepage graph — it loads only on /admin.
+const Studio = lazy(async () => {
+  const [{ Studio }, { default: config }] = await Promise.all([
+    import('sanity'),
+    import('../../sanity.config'),
+  ])
+  return { default: () => <Studio config={config} /> }
+})
 
 export default function AdminPage() {
   return (
@@ -25,7 +30,7 @@ export default function AdminPage() {
         </div>
       }
     >
-      <Studio config={config} />
+      <Studio />
     </Suspense>
   )
 }

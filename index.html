@@ -24,9 +24,19 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Performance: preconnect to Google Fonts -->
+    <!-- Performance: preconnect to the origins the page needs first -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="preconnect" href="https://1ymp2bxv.apicdn.sanity.io" />
+
+    <!-- Preload the LCP hero image so it isn't discovered late via JS -->
+    <link
+      rel="preload"
+      as="image"
+      href="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1600&q=80&auto=format&fit=crop"
+      fetchpriority="high"
+    />
 
     <!--
       Font strategy — Nunito Sans only:

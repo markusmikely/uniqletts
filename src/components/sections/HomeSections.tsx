@@ -98,6 +98,19 @@ export function FeaturedProperties() {
           <Link to="/properties" className="btn btn-primary">View all properties</Link>
         </div>
         <div className={styles.propGrid}>
+          {properties.length === 0 &&
+            /* Skeleton placeholders reserve the exact card space so the
+               footer doesn't jump when the async listings load (fixes CLS). */
+            Array.from({ length: 3 }).map((_, i) => (
+              <div key={`skeleton-${i}`} className={`card ${styles.propCard}`} aria-hidden="true">
+                <div className={styles.propImageWrap} style={{ aspectRatio: '3 / 2', background: 'var(--color-gray-100)' }} />
+                <div className={styles.propBody}>
+                  <div style={{ height: 22, width: '55%', background: 'var(--color-gray-100)', borderRadius: 4 }} />
+                  <div style={{ height: 15, width: '80%', background: 'var(--color-gray-100)', borderRadius: 4, marginTop: 10 }} />
+                  <div style={{ height: 18, width: '70%', background: 'var(--color-gray-100)', borderRadius: 4, marginTop: 12 }} />
+                </div>
+              </div>
+            ))}
           {properties.map((p, i) => {
             const addr = formatAddress(p.address)
             const img = getImage(p)
@@ -207,7 +220,7 @@ export function AreaHighlight() {
     <section className={`section ${styles.area}`}>
       <div className={`container ${styles.areaInner}`}>
         <div className={styles.areaImageWrap}>
-          <img src="https://images.unsplash.com/photo-1562280963-8a5475740a10?w=900&q=75&auto=format&fit=crop" alt="The new shopping centre in Bayswater, London" className={styles.areaImage} width={900} height={700} loading="lazy" decoding="async" />
+          <img src="https://images.unsplash.com/photo-1562280963-8a5475740a10?w=800&q=72&auto=format&fit=crop" alt="The new shopping centre in Bayswater, London" className={styles.areaImage} width={800} height={622} loading="lazy" decoding="async" />
           <div className={styles.areaImageCaption}>{copy?.imageCaption ?? 'The Whiteley, Queensway — on your doorstep'}</div>
         </div>
         <div className={styles.areaCopy}>
