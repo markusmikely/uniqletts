@@ -5,6 +5,7 @@ import prsLogo from '../../assets/prs.webp'
 import tdsLogo from '../../assets/tds.webp'
 import cmpLogo from '../../assets/cmp.webp'
 import { useSiteSettings, getSocialLinks } from '@/hooks/useSiteSettings'
+import { openConsent } from '@/lib/consent'
 
 /* ── Nav link columns ─────────────────────────────────────── */
 const LINKS = {
@@ -180,6 +181,8 @@ export default function Footer() {
               <Link to="/terms" className={styles.bottomLink}>Terms of use</Link>
               <span className={styles.bottomDot} aria-hidden="true">·</span>
               <Link to="/cookies" className={styles.bottomLink}>Cookie policy</Link>
+              <span className={styles.bottomDot} aria-hidden="true">·</span>
+              <button type="button" className={styles.bottomLink} onClick={openConsent}>Cookie settings</button>
             </div>
           </div>
         </div>

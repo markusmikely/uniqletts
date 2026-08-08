@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { getConsent, setConsent } from '@/lib/consent'
+import { getConsent, setConsent, OPEN_CONSENT_EVENT } from '@/lib/consent'
 import styles from './CookieConsent.module.css'
 
 /**
@@ -13,6 +13,10 @@ export default function CookieConsent() {
   useEffect(() => {
     // Only prompt if no decision has been stored yet.
     setVisible(getConsent() === null)
+    // Allow the footer "Cookie settings" link to re-open the banner.
+    function reopen() { setVisible(true) }
+    window.addEventListener(OPEN_CONSENT_EVENT, reopen)
+    return () => window.removeEventListener(OPEN_CONSENT_EVENT, reopen)
   }, [])
 
   if (!visible) return null

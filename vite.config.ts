@@ -4,6 +4,11 @@ import compression from 'vite-plugin-compression'
 import path from 'path'
 
 export default defineConfig({
+  // Serve from the domain root by default. To host under a sub-directory
+  // (e.g. https://uniqletts.com/new/), build with:
+  //   VITE_BASE_PATH=/new/ npm run build
+  // The router picks the same value up via import.meta.env.BASE_URL.
+  base: process.env.VITE_BASE_PATH || '/',
   plugins: [
     react(),
     compression({ algorithm: 'brotliCompress', ext: '.br' }),
