@@ -19,7 +19,7 @@ describe('submitEnquiry', () => {
 
     const result = await submitEnquiry({ type: 'contact', name: 'Jo', email: 'jo@example.com' })
 
-    expect(fetchMock).toHaveBeenCalledWith('/api/enquiry', expect.objectContaining({
+    expect(fetchMock).toHaveBeenCalledWith(expect.stringContaining('/api/enquiry'), expect.objectContaining({
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
     }))
@@ -48,7 +48,7 @@ describe('submitReview', () => {
 
     const result = await submitReview({ author: 'Anna', rating: 5, text: 'Great service' })
 
-    expect(fetchMock).toHaveBeenCalledWith('/api/review', expect.anything())
+    expect(fetchMock).toHaveBeenCalledWith(expect.stringContaining('/api/review'), expect.anything())
     expect(result).toEqual({ id: 'r1' })
   })
 })
@@ -60,7 +60,7 @@ describe('trackPropertyView', () => {
 
     await trackPropertyView('property-123')
 
-    expect(fetchMock).toHaveBeenCalledWith('/api/track-view', expect.objectContaining({ method: 'POST' }))
+    expect(fetchMock).toHaveBeenCalledWith(expect.stringContaining('/api/track-view'), expect.objectContaining({ method: 'POST' }))
     expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual({ propertyId: 'property-123' })
   })
 

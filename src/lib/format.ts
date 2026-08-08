@@ -10,8 +10,34 @@ export function formatPrice(price: number, period: 'pcm' | 'pw' | 'sale'): strin
   return formatted
 }
 
+/** First (outward) part of a UK postcode, e.g. "W2 4SA" → "W2". */
+export function outwardPostcode(postcode: string): string {
+  return String(postcode ?? '').trim().split(/\s+/)[0] ?? ''
+}
+
+/** Street name only — drops a leading building/flat number and any
+    unit prefix so the exact door isn't published.
+    "23 Redan Place" → "Redan Place"; "Flat 4, 12 Porchester Road" → "Porchester Road". */
+export function streetName(line1: string): string {
+  const afterUnit = String(line1 ?? '').split(',').pop() ?? ''
+  return afterUnit.replace(/^\s*\d+[a-zA-Z]?\s+/, '').trim() || afterUnit.trim()
+}
+
+/**
+ * Public-facing address for listings — street + neighbourhood + outward
+ * postcode only. Deliberately omits the house number and inward postcode
+ * so a listing can't be pinned to an exact property.
+ * e.g. { line1: "23 Redan Place", area: "Bayswater", postcode: "W2 4SA" }
+ *      → "Redan Place, Bayswater, W2"
+ */
 export function formatAddress(address: { line1: string; area: string; postcode: string }): string {
-  return `${address.line1}, ${address.area} ${address.postcode}`
+  const street = streetName(address.line1)
+  const outward = outwardPostcode(address.postcode)
+  const parts: string[] = []
+  if (street) parts.push(street)
+  if (address.area && address.area !== outward && address.area !== street) parts.push(address.area)
+  if (outward) parts.push(outward)
+  return parts.join(', ')
 }
 
 export function formatReviewDate(date: string): string {

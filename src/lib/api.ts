@@ -1,5 +1,14 @@
+/**
+ * Base URL for the serverless API.
+ * - Empty (default) → relative calls, i.e. same origin (Vercel).
+ * - Set VITE_API_BASE to the Vercel deployment URL (e.g.
+ *   https://uniqletts.vercel.app) when the frontend is hosted elsewhere
+ *   (e.g. a static build on cPanel) so forms still reach the functions.
+ */
+const API_BASE = (import.meta.env.VITE_API_BASE ?? '').replace(/\/$/, '')
+
 export async function submitEnquiry(data: Record<string, unknown>) {
-  const res = await fetch('/api/enquiry', {
+  const res = await fetch(`${API_BASE}/api/enquiry`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
@@ -17,7 +26,7 @@ export async function submitReview(data: {
   text: string
   website?: string
 }) {
-  const res = await fetch('/api/review', {
+  const res = await fetch(`${API_BASE}/api/review`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify(data),
@@ -31,7 +40,7 @@ export async function submitReview(data: {
 
 export async function trackPropertyView(propertyId: string) {
   try {
-    await fetch('/api/track-view', {
+    await fetch(`${API_BASE}/api/track-view`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ propertyId }),

@@ -1,0 +1,62 @@
+# Uniqletts — Apache/LiteSpeed (cPanel) config for the static SPA build.
+# Lives at the site root (public_html) alongside index.html.
+
+# ---------------------------------------------------------------------------
+# 1. Force HTTPS (AutoSSL must be active on the domain first)
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 2. SPA fallback — serve index.html for any route that isn't a real file/dir
+#    (so /properties/some-slug, /admin, etc. work on refresh & deep links)
+# ---------------------------------------------------------------------------
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+  RewriteRule ^ index.html [L]
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 3. Security headers (mirror of vercel.json)
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(self)"
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 4. Caching — hashed assets are immutable; never cache the HTML shell
+# ---------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  <FilesMatch "\.(js|css|woff2?|webp|png|jpg|jpeg|svg|ico)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(html)$">
+    Header set Cache-Control "no-cache, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 5. Compression
+# ---------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# ---------------------------------------------------------------------------
+# 6. Correct MIME types (older cPanel Apache can mis-serve these)
+# ---------------------------------------------------------------------------
+<IfModule mod_mime.c>
+  AddType application/javascript .js
+  AddType image/webp .webp
+  AddType application/manifest+json .webmanifest
+</IfModule>

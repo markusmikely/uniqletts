@@ -82,50 +82,61 @@ export function Dashboard() {
         <Heading as="h1" size={3}>Analytics Dashboard</Heading>
 
         <Flex gap={3} wrap="wrap">
-          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 160 }}>
-            <Text size={1} muted>New enquiries</Text>
-            <Heading size={4}>{stats.newEnquiryCount}</Heading>
+          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 180, flex: 1 }}>
+            <Stack space={3}>
+              <Text size={1} muted>New enquiries</Text>
+              <Heading size={4}>{stats.newEnquiryCount}</Heading>
+            </Stack>
           </Card>
-          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 160 }}>
-            <Text size={1} muted>Total property views</Text>
-            <Heading size={4}>{stats.totalViews ?? 0}</Heading>
+          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 180, flex: 1 }}>
+            <Stack space={3}>
+              <Text size={1} muted>Total property views</Text>
+              <Heading size={4}>{stats.totalViews ?? 0}</Heading>
+            </Stack>
           </Card>
-          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 160 }}>
-            <Text size={1} muted>Pending reviews</Text>
-            <Heading size={4}>{stats.pendingReviews}</Heading>
+          <Card padding={4} radius={2} shadow={1} style={{ minWidth: 180, flex: 1 }}>
+            <Stack space={3}>
+              <Text size={1} muted>Pending reviews</Text>
+              <Heading size={4}>{stats.pendingReviews}</Heading>
+            </Stack>
           </Card>
         </Flex>
 
         <Flex gap={4} wrap="wrap">
           <Card padding={4} radius={2} shadow={1} style={{ flex: 1, minWidth: 300 }}>
-            <Text weight="semibold" size={2} style={{ marginBottom: 16 }}>Enquiries by type</Text>
-            <ResponsiveContainer width="100%" height={200}>
-              <BarChart data={typeChartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis allowDecimals={false} />
-                <Tooltip />
-                <Bar dataKey="count" fill="#086fb8" />
-              </BarChart>
-            </ResponsiveContainer>
+            <Stack space={4}>
+              <Text weight="semibold" size={2}>Enquiries by type</Text>
+              <ResponsiveContainer width="100%" height={200}>
+                <BarChart data={typeChartData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis allowDecimals={false} />
+                  <Tooltip />
+                  <Bar dataKey="count" fill="#086fb8" />
+                </BarChart>
+              </ResponsiveContainer>
+            </Stack>
           </Card>
 
           <Card padding={4} radius={2} shadow={1} style={{ flex: 1, minWidth: 300 }}>
-            <Text weight="semibold" size={2} style={{ marginBottom: 16 }}>Enquiries by status</Text>
-            <ResponsiveContainer width="100%" height={200}>
-              <BarChart data={statusChartData}>
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis allowDecimals={false} />
-                <Tooltip />
-                <Bar dataKey="count" fill="#e8833a" />
-              </BarChart>
-            </ResponsiveContainer>
+            <Stack space={4}>
+              <Text weight="semibold" size={2}>Enquiries by status</Text>
+              <ResponsiveContainer width="100%" height={200}>
+                <BarChart data={statusChartData}>
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis allowDecimals={false} />
+                  <Tooltip />
+                  <Bar dataKey="count" fill="#e8833a" />
+                </BarChart>
+              </ResponsiveContainer>
+            </Stack>
           </Card>
         </Flex>
 
         <Card padding={4} radius={2} shadow={1}>
-          <Text weight="semibold" size={2} style={{ marginBottom: 16 }}>Top properties by views</Text>
+          <Stack space={4}>
+          <Text weight="semibold" size={2}>Top properties by views</Text>
           <Stack space={3}>
             {stats.topProperties.length === 0 ? (
               <Text muted>No property views yet</Text>
@@ -138,25 +149,30 @@ export function Dashboard() {
               ))
             )}
           </Stack>
+          </Stack>
         </Card>
 
         <Card padding={4} radius={2} shadow={1}>
-          <Text weight="semibold" size={2} style={{ marginBottom: 8 }}>Website traffic (GA4)</Text>
-          <Text muted size={1} style={{ marginBottom: 16 }}>
-            General website analytics are tracked via Google Analytics. Property views and enquiry pipeline stats above are tracked in Sanity.
-          </Text>
-          {gtmId ? (
-            <Button
-              as="a"
-              href="https://analytics.google.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              text="Open Google Analytics"
-              tone="primary"
-            />
-          ) : (
-            <Text muted size={1}>Set VITE_GTM_ID to enable GA4 tracking on the public site.</Text>
-          )}
+          <Stack space={3}>
+            <Text weight="semibold" size={2}>Website traffic (GA4)</Text>
+            <Text muted size={1}>
+              General website analytics are tracked via Google Analytics. Property views and enquiry pipeline stats above are tracked in Sanity.
+            </Text>
+            {gtmId ? (
+              <Box>
+                <Button
+                  as="a"
+                  href="https://analytics.google.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  text="Open Google Analytics"
+                  tone="primary"
+                />
+              </Box>
+            ) : (
+              <Text muted size={1}>Set VITE_GTM_ID to enable GA4 tracking on the public site.</Text>
+            )}
+          </Stack>
         </Card>
       </Stack>
     </Box>

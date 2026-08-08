@@ -40,10 +40,21 @@ function AdminLayout({ children }: { children: React.ReactNode }) {
 /* Restore scroll position to the top whenever the route changes —
    without this, SPA navigations keep the previous page's scroll offset.
    Hash links (e.g. /landlords#management) are left to the browser. */
+const SITE_URL = 'https://www.uniqletts.com'
+
 function ScrollToTop() {
   const { pathname, hash } = useLocation()
   useEffect(() => {
     if (!hash) window.scrollTo(0, 0)
+    // Keep the canonical URL in sync with the current route — otherwise
+    // every page inherits the homepage canonical from index.html.
+    let link = document.querySelector<HTMLLinkElement>('link[rel="canonical"]')
+    if (!link) {
+      link = document.createElement('link')
+      link.rel = 'canonical'
+      document.head.appendChild(link)
+    }
+    link.href = SITE_URL + (pathname === '/' ? '/' : pathname)
   }, [pathname, hash])
   return null
 }

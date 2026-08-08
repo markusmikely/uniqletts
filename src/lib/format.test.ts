@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { formatPrice, formatAddress, formatReviewDate, sourceLabel, whatsappPropertyUrl } from './format'
+import { formatPrice, formatAddress, outwardPostcode, streetName, formatReviewDate, sourceLabel, whatsappPropertyUrl } from './format'
 
 describe('formatPrice', () => {
   it('formats monthly rents with pcm suffix', () => {
@@ -20,10 +20,44 @@ describe('formatPrice', () => {
 })
 
 describe('formatAddress', () => {
-  it('joins line1, area and postcode', () => {
+  it('shows street, area and outward postcode only (no house number or inward code)', () => {
     expect(
-      formatAddress({ line1: '24 Gelding Court, Jamaica Road', area: 'Bermondsey', postcode: 'SE1 2RN' })
-    ).toBe('24 Gelding Court, Jamaica Road, Bermondsey SE1 2RN')
+      formatAddress({ line1: '23 Redan Place', area: 'Bayswater', postcode: 'W2 4SA' })
+    ).toBe('Redan Place, Bayswater, W2')
+  })
+
+  it('drops a unit/flat prefix and keeps only the street', () => {
+    expect(
+      formatAddress({ line1: 'Flat 4, 12 Porchester Road', area: 'Bayswater', postcode: 'W2 5DP' })
+    ).toBe('Porchester Road, Bayswater, W2')
+  })
+
+  it('does not duplicate area when it equals the outward code', () => {
+    expect(
+      formatAddress({ line1: 'Westbourne Grove', area: 'W2', postcode: 'W2 4UA' })
+    ).toBe('Westbourne Grove, W2')
+  })
+
+  it('handles a street with no leading number', () => {
+    expect(
+      formatAddress({ line1: 'Leinster Gardens', area: 'Bayswater', postcode: 'W2 6DR' })
+    ).toBe('Leinster Gardens, Bayswater, W2')
+  })
+})
+
+describe('outwardPostcode', () => {
+  it('returns the first part of the postcode', () => {
+    expect(outwardPostcode('W2 4SA')).toBe('W2')
+    expect(outwardPostcode('SE1 2RN')).toBe('SE1')
+    expect(outwardPostcode('W2')).toBe('W2')
+  })
+})
+
+describe('streetName', () => {
+  it('strips leading building numbers and unit prefixes', () => {
+    expect(streetName('23 Redan Place')).toBe('Redan Place')
+    expect(streetName('Flat 4, 12 Porchester Road')).toBe('Porchester Road')
+    expect(streetName('Leinster Gardens')).toBe('Leinster Gardens')
   })
 })
 

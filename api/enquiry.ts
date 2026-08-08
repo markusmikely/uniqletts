@@ -31,12 +31,22 @@ interface EnquiryPayload {
   website?: string
 }
 
+/** Escape user-supplied values so enquiry content can't inject HTML into the notification email. */
+function escapeHtml(value: unknown): string {
+  return String(value ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;')
+}
+
 function buildEmailHtml(payload: EnquiryPayload): string {
   const rows = Object.entries(payload)
     .filter(([k, v]) => v && k !== 'website')
-    .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;font-weight:600">${k}</td><td>${v}</td></tr>`)
+    .map(([k, v]) => `<tr><td style="padding:4px 12px 4px 0;font-weight:600">${escapeHtml(k)}</td><td>${escapeHtml(v)}</td></tr>`)
     .join('')
-  return `<h2>New ${payload.type} enquiry</h2><table>${rows}</table>`
+  return `<h2>New ${escapeHtml(payload.type)} enquiry</h2><table>${rows}</table>`
 }
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

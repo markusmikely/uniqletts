@@ -5,6 +5,8 @@ interface ImportMetaEnv {
   readonly VITE_SANITY_DATASET: string
   readonly VITE_GTM_ID?: string
   readonly VITE_CLARITY_ID?: string
+  /** Absolute base for the serverless API when hosted off-origin (e.g. cPanel → Vercel). Empty = same origin. */
+  readonly VITE_API_BASE?: string
 }
 
 interface ImportMeta {

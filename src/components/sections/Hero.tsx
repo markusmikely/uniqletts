@@ -55,9 +55,8 @@ export default function Hero() {
           </p>
 
           <h1 className={`animate-fade-up delay-1 ${styles.heading}`}>
-            Your home in<br />
-            <span className={styles.headingAccent}>London</span><br />
-            starts here
+            Find your place in<br />
+            <span className={styles.headingAccent}>London</span>
           </h1>
 
           <p className={`animate-fade-up delay-2 ${styles.sub}`}>
