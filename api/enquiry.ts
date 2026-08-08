@@ -1,8 +1,7 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
 import {
-  sanityWriteClient,
-  resend,
-  NOTIFY_EMAIL,
+  getWriteClient,
+  sendEmail,
   corsHeaders,
   isSpam,
   validateEmail,
@@ -94,16 +93,19 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const created = await sanityWriteClient.create(doc)
+    const client = getWriteClient()
+    const created = await client.create(doc)
 
-    if (resend) {
-      await resend.emails.send({
-        from: 'Uniqletts <onboarding@resend.dev>',
-        to: NOTIFY_EMAIL,
+    // Email is best-effort — a delivery failure must not fail the enquiry,
+    // which is already safely stored in Sanity.
+    try {
+      const sent = await sendEmail({
         subject: `New ${body.type} enquiry from ${body.name}`,
         html: buildEmailHtml(body),
       })
-      await sanityWriteClient.patch(created._id).set({ forwardedAt: now }).commit()
+      if (sent) await client.patch(created._id).set({ forwardedAt: now }).commit()
+    } catch (mailErr) {
+      console.error('Enquiry email failed (enquiry still saved):', mailErr)
     }
 
     return res.status(200).json({ ok: true, id: created._id })

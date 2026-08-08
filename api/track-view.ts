@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { sanityWriteClient, corsHeaders } from './_server'
+import { getWriteClient, corsHeaders } from './_server'
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   Object.entries(corsHeaders()).forEach(([k, v]) => res.setHeader(k, v))
@@ -11,7 +11,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (!propertyId) return res.status(400).json({ error: 'Missing propertyId' })
 
   try {
-    await sanityWriteClient
+    await getWriteClient()
       .patch(propertyId)
       .setIfMissing({ viewCount: 0 })
       .inc({ viewCount: 1 })

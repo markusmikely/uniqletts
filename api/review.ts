@@ -1,5 +1,5 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node'
-import { sanityWriteClient, corsHeaders, isSpam, validateEmail } from './_server'
+import { getWriteClient, corsHeaders, isSpam, validateEmail } from './_server'
 
 interface ReviewPayload {
   author: string
@@ -34,7 +34,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   }
 
   try {
-    const created = await sanityWriteClient.create({
+    const created = await getWriteClient().create({
       _type: 'review',
       source: 'custom',
       author: body.author,
