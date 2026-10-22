@@ -7,6 +7,7 @@ import { MOCK_PROPERTIES } from '@/lib/mock'
 import { formatPrice, formatAddress } from '@/lib/format'
 import type { Property } from '@/types'
 import styles from './PropertiesPage.module.css'
+import propertiesHero from '@/assets/heroes/properties-mansion-block.jpg'
 
 const PropertiesMap = lazy(() => import('@/components/properties/PropertiesMap'))
 
@@ -315,7 +316,8 @@ export default function PropertiesPage() {
         eyebrow="Central & Greater London"
         title="Properties to rent & buy"
         subtitle="Browse our current lettings and sales listings across central and Greater London — from Bayswater and Kensington to London Bridge and beyond."
-        image="https://images.unsplash.com/photo-1694501522559-980c07631b21?w=1800&q=80&auto=format&fit=crop"
+        image={propertiesHero}
+        imageAlt="Red-brick mansion blocks on a London street"
         imagePosition="center 35%"
       />
 

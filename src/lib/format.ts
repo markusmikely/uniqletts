@@ -57,7 +57,20 @@ export function sourceLabel(source: string): string {
   return labels[source] ?? source
 }
 
+/**
+ * wa.me only accepts the full international number, digits only, with no
+ * leading 00/+ and no UK trunk "0" — "4402072214000" or "020 7221 4000"
+ * both fail. Normalise whatever was typed into the CMS to "442072214000".
+ */
+export function normaliseWhatsappNumber(number: string): string {
+  let digits = String(number ?? '').replace(/\D/g, '')
+  if (digits.startsWith('00')) digits = digits.slice(2)
+  if (digits.startsWith('440')) digits = '44' + digits.slice(3)
+  else if (digits.startsWith('0')) digits = '44' + digits.slice(1)
+  return digits
+}
+
 export function whatsappPropertyUrl(number: string, title: string, slug: string): string {
   const text = encodeURIComponent(`Hi, I'm interested in: ${title} (https://www.uniqletts.com/properties/${slug})`)
-  return `https://wa.me/${number}?text=${text}`
+  return `https://wa.me/${normaliseWhatsappNumber(number)}?text=${text}`
 }

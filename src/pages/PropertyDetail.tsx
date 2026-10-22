@@ -65,6 +65,13 @@ export default function PropertyDetail() {
   const priceStr = formatPrice(property.price, property.pricePeriod)
   const images = property.images?.filter(img => img.url) ?? []
   const videoUrl = getVideoEmbedUrl(property.video)
+  const kitchenLabel = property.hasKitchen === false
+    ? null
+    : property.kitchenLayout === 'open-plan'
+      ? 'Open-plan kitchen'
+      : property.kitchenLayout === 'separate'
+        ? 'Separate kitchen'
+        : property.hasKitchen ? 'Kitchen' : null
   const availableLabel = property.availableFrom
     ? new Date(property.availableFrom).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' })
     : 'Now'
@@ -157,6 +164,8 @@ export default function PropertyDetail() {
             <div className={styles.keyFacts}>
               <span className="badge badge-blue">{property.bedrooms} bed</span>
               <span className="badge badge-blue">{property.bathrooms} bath</span>
+              {property.hasLivingRoom && <span className="badge badge-blue">Living room</span>}
+              {kitchenLabel && <span className="badge badge-blue">{kitchenLabel}</span>}
               {property.epcRating && <span className="badge badge-gray">EPC {property.epcRating}</span>}
               <span className="badge badge-gray">Available {availableLabel}</span>
               {property.status === 'available'

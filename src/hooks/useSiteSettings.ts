@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { getSiteSettings } from '@/lib/sanity'
+import { normaliseWhatsappNumber } from '@/lib/format'
 
 export interface SiteSettingsData {
   phone?: string
@@ -24,7 +25,7 @@ export interface SiteSettingsData {
 const DEFAULTS: SiteSettingsData = {
   phone: '0207 221 4000',
   email: 'info@uniqletts.com',
-  whatsappNumber: '4402072214000',
+  whatsappNumber: '442072214000',
   officeAddress: 'Suite 14, 23 Redan Place\nBayswater, London W2 4SA',
   openingHours: {
     weekdays: '9:00am – 6:00pm',
@@ -44,7 +45,9 @@ export function useSiteSettings() {
     if (cache) return
     getSiteSettings().then(data => {
       if (data) {
-        const merged = { ...DEFAULTS, ...data }
+        // Blank CMS fields come back as null — don't let them wipe the defaults
+        const filled = Object.fromEntries(Object.entries(data).filter(([, v]) => v != null && v !== ''))
+        const merged = { ...DEFAULTS, ...filled }
         cache = merged
         setSettings(merged)
       }
@@ -56,7 +59,7 @@ export function useSiteSettings() {
 
 export function getSocialLinks(settings: SiteSettingsData) {
   const defaults = [
-    { platform: 'whatsapp', url: `https://wa.me/${settings.whatsappNumber}`, enabled: true },
+    { platform: 'whatsapp', url: `https://wa.me/${normaliseWhatsappNumber(settings.whatsappNumber ?? '')}`, enabled: true },
     { platform: 'instagram', url: 'https://instagram.com/uniqletts', enabled: true },
     { platform: 'x', url: 'https://twitter.com/uniqletts', enabled: true },
     { platform: 'linkedin', url: 'https://linkedin.com/company/uniqletts', enabled: true },

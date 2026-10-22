@@ -21,6 +21,9 @@ export interface Property {
   pricePeriod: 'pcm' | 'pw' | 'sale'
   bedrooms: number
   bathrooms: number
+  hasKitchen?: boolean
+  kitchenLayout?: 'open-plan' | 'separate'
+  hasLivingRoom?: boolean
   description?: string | import('@portabletext/types').PortableTextBlock[]
   images?: PropertyImage[]
   mainImage?: unknown

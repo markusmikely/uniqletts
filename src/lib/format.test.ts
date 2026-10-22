@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest'
-import { formatPrice, formatAddress, outwardPostcode, streetName, formatReviewDate, sourceLabel, whatsappPropertyUrl } from './format'
+import { formatPrice, formatAddress, outwardPostcode, streetName, formatReviewDate, sourceLabel, whatsappPropertyUrl, normaliseWhatsappNumber } from './format'
 
 describe('formatPrice', () => {
   it('formats monthly rents with pcm suffix', () => {
@@ -85,5 +85,22 @@ describe('whatsappPropertyUrl', () => {
     expect(url).toMatch(/^https:\/\/wa\.me\/442071234000\?text=/)
     expect(decodeURIComponent(url)).toContain('Lovely flat')
     expect(decodeURIComponent(url)).toContain('/properties/lovely-flat')
+  })
+
+  it('normalises numbers wa.me would reject', () => {
+    expect(whatsappPropertyUrl('4402072214000', 'x', 'x')).toMatch(/^https:\/\/wa\.me\/442072214000\?/)
+  })
+})
+
+describe('normaliseWhatsappNumber', () => {
+  it.each([
+    ['442072214000', '442072214000'],
+    ['4402072214000', '442072214000'],
+    ['+44 (0)20 7221 4000', '442072214000'],
+    ['0044 20 7221 4000', '442072214000'],
+    ['020 7221 4000', '442072214000'],
+    ['07700 900123', '447700900123'],
+  ])('%s → %s', (input, expected) => {
+    expect(normaliseWhatsappNumber(input)).toBe(expected)
   })
 })

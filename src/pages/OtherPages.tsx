@@ -7,6 +7,8 @@ import PageHero from '@/components/ui/PageHero'
 import { submitEnquiry } from '@/lib/api'
 import { useSiteSettings } from '@/hooks/useSiteSettings'
 import styles from './InnerPage.module.css'
+import aboutHero from '@/assets/heroes/about-street.jpg'
+import contactHero from '@/assets/heroes/contact-stucco-terrace.jpg'
 
 export function TenantsPage() {
   useEffect(() => {
@@ -396,7 +398,8 @@ export function AboutPage() {
         eyebrow="About us"
         title="Independent, family-run, and genuinely local"
         subtitle="Uniqletts was founded on a simple belief: that buying, selling and renting property should be a personal experience — not a transaction processed by a call centre."
-        image="https://images.unsplash.com/photo-1588021624472-f8345116c8f2?w=1800&q=80&auto=format&fit=crop"
+        image={aboutHero}
+        imageAlt="Tree-lined Georgian terrace in central London"
         imagePosition="center 30%"
       />
 
@@ -490,8 +493,9 @@ export function ContactPage() {
         eyebrow="Get in touch"
         title="We'd love to hear from you"
         subtitle="Whether you're looking to rent, let, buy or sell — we're here to help. Call us, email, or fill in the form below."
-        image="https://images.unsplash.com/photo-1689848693914-7ba25d9f3334?w=1800&q=80&auto=format&fit=crop"
-        imagePosition="center 35%"
+        image={contactHero}
+        imageAlt="White stucco terraces with red telephone boxes in Bayswater"
+        imagePosition="center 40%"
       />
 
       <section className={`section ${styles.section}`}>
